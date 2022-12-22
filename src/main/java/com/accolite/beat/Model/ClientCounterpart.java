@@ -16,3 +16,4 @@ public class ClientCounterpart {
 
     private String orgId;
 }
+
