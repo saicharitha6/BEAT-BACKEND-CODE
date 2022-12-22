@@ -1,24 +1,18 @@
 package com.accolite.beat.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
-import lombok.NonNull;
 
 @Entity
 @Data
+@Table(name="CLIENT_COUNTERPART")
 public class ClientCounterpart {
-    @Id @NonNull @GeneratedValue(strategy= GenerationType.AUTO)
+    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE)
     private long id;
 
-    @NonNull
     private String name;
 
-    @NonNull
     private long clientId;
 
-    @NonNull
     private String orgId;
 }

@@ -1,20 +1,16 @@
 package com.accolite.beat.Model;
 
 import jakarta.annotation.Nullable;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
-import lombok.NonNull;
 
 @Entity
 @Data
+@Table(name="ROLES_GROUP")
 public class RolesGroup {
-    @Id @NonNull @GeneratedValue(strategy=GenerationType.AUTO)
+    @Id @GeneratedValue(strategy=GenerationType.SEQUENCE)
     private long id;
 
-    @NonNull
     private String name;
 
     @Nullable
