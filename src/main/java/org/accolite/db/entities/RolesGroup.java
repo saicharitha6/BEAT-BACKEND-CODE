@@ -1,4 +1,4 @@
-package com.accolite.beat.Model;
+package org.accolite.db.entities;
 
 import jakarta.annotation.Nullable;
 import jakarta.persistence.*;

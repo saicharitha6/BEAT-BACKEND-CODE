@@ -1,4 +1,4 @@
-package com.accolite.beat.Model;
+package org.accolite.db.entities;
 import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.util.Date;
 @Table(name="EmployeeHistory")
 public class EmployeeHistory {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private long empId;
     private String name;
