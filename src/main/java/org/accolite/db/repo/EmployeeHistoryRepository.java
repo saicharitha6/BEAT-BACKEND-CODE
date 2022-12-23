@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmployeeHistoryRepository extends JpaRepository<EmployeeHistory,Long>{
-
 }
