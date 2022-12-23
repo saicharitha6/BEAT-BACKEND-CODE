@@ -1,4 +1,4 @@
-package org.accolite.beat;
+package org.accolite;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
