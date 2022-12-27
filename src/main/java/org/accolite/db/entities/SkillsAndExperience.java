@@ -11,10 +11,10 @@ import java.util.Date;
 @Table(name = "SKILL_AND_EXPERIENCE")
 public class SkillsAndExperience {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private int dd;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long dd;
 
-    private int empId;
+    private long empId;
 
     private String skills;
 
@@ -26,5 +26,5 @@ public class SkillsAndExperience {
 
     private Date updatedOn;
 
-    private int editorID;
+    private long editorID;
 }

@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 @Table(name="SLAB_CHARGES")
 public class SlabCharges {
-    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
 
     private long slabId;

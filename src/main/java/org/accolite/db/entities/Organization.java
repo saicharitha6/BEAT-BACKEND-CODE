@@ -9,7 +9,7 @@ import lombok.Data;
 @Table(name="ORGANIZATION")
 public class Organization {
 
-    @Id @GeneratedValue(strategy=GenerationType.SEQUENCE)
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
 
     private String orgName;

@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 @Table(name="ROLES_GROUP")
 public class RolesGroup {
-    @Id @GeneratedValue(strategy=GenerationType.SEQUENCE)
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
 
     private String name;

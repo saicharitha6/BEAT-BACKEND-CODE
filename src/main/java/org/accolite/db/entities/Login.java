@@ -8,7 +8,7 @@ import lombok.Data;
 @Table(name="LOGIN")
 public class Login {
 
-    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
 
     private long empId;
