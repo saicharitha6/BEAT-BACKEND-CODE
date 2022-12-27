@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 @Table(name="ROLES")
 public class Roles {
-    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
 
     private String accessName;

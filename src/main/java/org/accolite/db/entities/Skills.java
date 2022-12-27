@@ -10,7 +10,7 @@ import lombok.Data;
 @Table(name = "SKILLS")
 public class Skills {
    @Id
-   @GeneratedValue(strategy = GenerationType.SEQUENCE)
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String skill;

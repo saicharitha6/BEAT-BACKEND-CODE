@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 @Table(name="CLIENT_COUNTERPART")
 public class ClientCounterpart {
-    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
 
     private String name;
