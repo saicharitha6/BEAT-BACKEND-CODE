@@ -9,7 +9,6 @@ import lombok.Data;
 public class Roles {
     @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
-
     private String accessName;
 }
 
