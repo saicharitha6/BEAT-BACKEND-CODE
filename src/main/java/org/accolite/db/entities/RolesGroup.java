@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="ROLES_GROUP")
+@Table(name="ROLE_GROUPS")
 public class RolesGroup {
     @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
