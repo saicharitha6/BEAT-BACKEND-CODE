@@ -13,7 +13,7 @@ public class Login {
 
     private long empId;
 
-    private String name;
+    private String username;
 
     private String email;
 
