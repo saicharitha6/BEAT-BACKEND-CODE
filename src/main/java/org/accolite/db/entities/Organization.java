@@ -1,5 +1,6 @@
 package org.accolite.db.entities;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,10 +17,18 @@ public class Organization {
 
     private String location;
 
-    private long owner;
+    private String owner;
+
+    @Nullable
+    private long ownerEmpId;
 
     private long parentOrg;
 
+    private boolean status;
+
+    public boolean getStatus() {
+        return status;
+    }
 }
 
 

@@ -16,8 +16,6 @@ public class EmployeeHistory {
     @Nullable
     private long clientCounterpartId;
     private long organizationId;
-    private String organizationDepartment;
-    private String accoliteDepartment;
     private Date fromDate;
     @Nullable
     private Date toDate;
@@ -25,4 +23,9 @@ public class EmployeeHistory {
     private long projectId;
     private long dateOfJoiningProject;
     private long dateOfLeavingProject;
+    private boolean status;
+
+    public boolean getStatus() {
+        return status;
+    }
 }

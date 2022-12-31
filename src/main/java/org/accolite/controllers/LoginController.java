@@ -19,7 +19,7 @@ public class LoginController {
     @Autowired
     private LoginComponent loginComponent;
     @Autowired
-    RolesGroupComponent rolesGroupComponent;
+    private RolesGroupComponent rolesGroupComponent;
     @Autowired
     ObjectFactory<HttpSession> httpSessionFactory;
 
