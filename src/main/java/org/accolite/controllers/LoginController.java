@@ -7,6 +7,7 @@ import org.accolite.buisnesslogic.RolesGroupComponent;
 import org.accolite.buisnesslogic.LoginComponent;
 import org.accolite.pojo.LoginDetails;
 import org.accolite.pojo.SessionDetails;
+import org.accolite.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,9 @@ public class LoginController {
     private LoginComponent loginComponent;
     @Autowired
     RolesGroupComponent rolesGroupComponent;
+
+    @Autowired
+    private JwtUtil jwtUtil;
     @Autowired
     ObjectFactory<HttpSession> httpSessionFactory;
 
@@ -41,14 +45,24 @@ public class LoginController {
     }
 
     @GetMapping(value = PathConstants.accessPath,produces = "plain/text")
-    private  ResponseEntity<String> access(){
+    private  ResponseEntity<String> access(@RequestHeader("jwt") String token){
         HttpSession session = httpSessionFactory.getObject();
-        Access access = Access.getInstance();
-        if(access.access == null){
-            return ResponseEntity.notFound().build();
-        }
-        else {
-            return ResponseEntity.ok().body(access.access);
+        SessionDetails sessionDetails = (SessionDetails) session.getAttribute("sessionDetailsInSession");
+        try{
+            if(jwtUtil.validateToken(token,String.valueOf(sessionDetails.getEmpId()))){
+                Access access = Access.getInstance();
+                if(access.access == null){
+                    return ResponseEntity.notFound().build();
+                }
+                else {
+                    return ResponseEntity.ok().body(access.access);
+                }
+            }
+            else {
+                return ResponseEntity.badRequest().build();
+            }
+        }catch (Exception ex){
+            return ResponseEntity.badRequest().build();
         }
     }
 }

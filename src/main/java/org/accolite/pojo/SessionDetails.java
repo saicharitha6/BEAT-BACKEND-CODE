@@ -7,4 +7,5 @@ public class SessionDetails {
     private long empId;
     private  String userName;
     private  long accessId;
+    private  String Jwt;
 }
