@@ -2,7 +2,7 @@ package org.accolite.buisnesslogic;
 
 import jakarta.servlet.http.HttpSession;
 import org.accolite.db.entities.RolesGroup;
-import org.accolite.db.services.RoleGroupService;
+import org.accolite.db.services.impl.RoleGroupService;
 import org.accolite.pojo.SessionDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

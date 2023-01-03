@@ -4,7 +4,7 @@ import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Login;
 import org.accolite.pojo.LoginDetails;
-import org.accolite.db.services.LoginService;
+import org.accolite.db.services.impl.LoginService;
 import org.accolite.pojo.SessionDetails;
 import org.accolite.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
