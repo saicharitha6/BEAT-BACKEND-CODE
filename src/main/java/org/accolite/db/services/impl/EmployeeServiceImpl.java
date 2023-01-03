@@ -1,11 +1,12 @@
-package org.accolite.db.services.employee;
+package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Employee;
 import org.accolite.db.repo.EmployeeRepository;
+import org.accolite.db.services.EmployeeService;
+import org.accolite.pojo.EmployeeUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.Optional;
 
 @Slf4j
 @Service
-public class EmployeeServiceImplementation implements EmployeeService {
+public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
@@ -23,10 +24,9 @@ public class EmployeeServiceImplementation implements EmployeeService {
     }
 
     @Override
-    @Transactional
-    public Employee getEmployeeObj(Employee employee) {
-        Optional<Employee> employeeFromDbObj = employeeRepository.findById(employee.getId());
-        return employeeFromDbObj.orElse(null);
+    public Optional<Employee> getEmployeeObj(long id) {
+        Optional<Employee> employeeFromDbObj = employeeRepository.findById(id);
+        return employeeFromDbObj;
 
     }
 
@@ -36,8 +36,7 @@ public class EmployeeServiceImplementation implements EmployeeService {
     }
 
     @Override
-    @Transactional
-    public Employee disableEmployee(Employee employee) {
+    public boolean disableEmployee(Employee employee) {
         Optional<Employee> empObj = this.employeeRepository.findById(employee.getId());
         Date date = new Date();
         if (empObj.isPresent()) {
@@ -45,12 +44,11 @@ public class EmployeeServiceImplementation implements EmployeeService {
             employeeUpdate.setDateOfLeaving(date);
 
             employeeRepository.save(employeeUpdate);
-            return employeeUpdate;
+            return true;
         } else {
             log.debug("Employee with employee ID: " + employee.getId() + " is not present");
-            return employee;
+            return false;
         }
-
     }
 
     @Override
@@ -64,6 +62,22 @@ public class EmployeeServiceImplementation implements EmployeeService {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public EmployeeUpdateDetails cloneDetails(EmployeeUpdateDetails employeeUpdateDetailsFromDb, Employee employeeDetailsFromDb) {
+
+        employeeUpdateDetailsFromDb.setId(employeeDetailsFromDb.getId());
+        employeeUpdateDetailsFromDb.setLocation(employeeDetailsFromDb.getLocation());
+        employeeUpdateDetailsFromDb.setDesignation(employeeDetailsFromDb.getDesignation());
+        employeeUpdateDetailsFromDb.setCategory(employeeDetailsFromDb.getCategory());
+        employeeUpdateDetailsFromDb.setProjectId(employeeDetailsFromDb.getProjectId());
+        employeeUpdateDetailsFromDb.setLeadId(employeeDetailsFromDb.getLeadId());
+        employeeUpdateDetailsFromDb.setOrganizationId(employeeDetailsFromDb.getOrganizationId());
+        employeeUpdateDetailsFromDb.setClientCounterpartId(employeeUpdateDetailsFromDb.getClientCounterpartId());
+        employeeUpdateDetailsFromDb.setBand(employeeDetailsFromDb.getBand());
+
+        return employeeUpdateDetailsFromDb;
     }
 
 

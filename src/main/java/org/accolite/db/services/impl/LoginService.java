@@ -1,4 +1,4 @@
-package org.accolite.db.services;
+package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Login;

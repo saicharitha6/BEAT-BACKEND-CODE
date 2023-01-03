@@ -24,8 +24,4 @@ public class EmployeeHistory {
     private long dateOfJoiningProject;
     private long dateOfLeavingProject;
     private boolean status;
-
-    public boolean getStatus() {
-        return status;
-    }
 }

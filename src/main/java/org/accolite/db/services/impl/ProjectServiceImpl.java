@@ -1,8 +1,9 @@
-package org.accolite.db.services.project;
+package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Project;
 import org.accolite.db.repo.ProjectRepository;
+import org.accolite.db.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.Optional;
 
 @Slf4j
 @Service
-public class ProjectServiceImplementation implements ProjectService{
+public class ProjectServiceImpl implements ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
@@ -21,9 +22,9 @@ public class ProjectServiceImplementation implements ProjectService{
     }
 
     @Override
-    public Project getProjectObj(Project project) {
-        Optional<Project> projectFromDbObj = projectRepository.findById(project.getId());
-        return projectFromDbObj.orElse(null);
+    public Optional<Project> getProjectObj(long id) {
+        Optional<Project> projectFromDbObj = projectRepository.findById(id);
+        return projectFromDbObj;
     }
 
     @Override
@@ -60,6 +61,22 @@ public class ProjectServiceImplementation implements ProjectService{
         else {
             return false;
         }
+    }
+
+    @Override
+    public Project compareDetails(Project projectUpdate, Project project) {
+        projectUpdate.setId(project.getId());
+        projectUpdate.setName(project.getName());
+        projectUpdate.setOrganization(project.getOrganization());
+        projectUpdate.setProjectManager(project.getProjectManager());
+        projectUpdate.setStartDate(project.getStartDate());
+        projectUpdate.setLocation(project.getLocation());
+        projectUpdate.setEndDate(project.getEndDate());
+        projectUpdate.setDescription(project.getDescription());
+        projectUpdate.setProjectType(project.getProjectType());
+        projectUpdate.setEditorId(project.getEditorId());
+        projectUpdate.setStatus(project.isStatus());
+        return projectUpdate;
     }
 
 }

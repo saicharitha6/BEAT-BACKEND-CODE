@@ -3,11 +3,12 @@ package org.accolite.buisnesslogic;
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.EmployeeHistory;
-import org.accolite.db.services.employee.EmployeeHistoryService;
-import org.accolite.db.services.employee.EmployeeService;
+import org.accolite.db.services.impl.EmployeeHistoryService;
+import org.accolite.db.services.EmployeeService;
+import org.accolite.pojo.EmployeeUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import java.util.Objects;
+
 import java.util.Optional;
 
 @Slf4j
@@ -20,82 +21,48 @@ public class EmployeeComponent {
     @Autowired
     EmployeeHistoryService employeeHistoryService;
 
-    public boolean updateEmployee(Employee employee) {
-        Optional<Employee> employeeFromDbObj = Optional.ofNullable(employeeService.getEmployeeObj(employee));
+    public boolean updateEmployee(EmployeeUpdateDetails employeeUpdateDetailsFromClient) {
+        Optional<Employee> employeeFromDbObj = employeeService.getEmployeeObj(employeeUpdateDetailsFromClient.getId());
 
         if (employeeFromDbObj.isPresent()) {
-            Employee employeeUpdate = employeeFromDbObj.get();
+            Employee employeeDetailsFromDb = employeeFromDbObj.get();
+            EmployeeUpdateDetails employeeUpdateDetailsFromDb = new EmployeeUpdateDetails();
+            employeeUpdateDetailsFromDb = employeeService.cloneDetails(employeeUpdateDetailsFromDb, employeeDetailsFromDb);
 
-            if (employeeUpdate.equals(employee)) {
-                log.debug("No changes detected in employee with employee ID: " + employee.getId());
+            if (employeeUpdateDetailsFromClient.equals(employeeUpdateDetailsFromDb)) {
+                log.info("No changes detected in employee with employee ID: " + employeeUpdateDetailsFromDb.getId());
                 return false;
             }
-            if (employeeUpdate.getDateOfLeaving() != null) {
-                log.debug("Employee with employee ID: " + employee.getId() + " has left the organization");
+            if (employeeDetailsFromDb.getDateOfLeaving() != null) {
+                log.info("Employee with employee ID: " + employeeDetailsFromDb.getId() + " has left the organization");
                 return false;
             }
 
+            updateEmployeeHistory(employeeUpdateDetailsFromClient);
 
-            updateEmployeeHistory(employee, employeeUpdate);
-
-//            employeeUpdate.setId(employee.getId());
-            employeeUpdate.setName(employee.getName());
-            employeeUpdate.setLocation(employee.getLocation());
-            employeeUpdate.setGender(employee.getGender());
-//            employeeUpdate.setDateOfJoining(employee.getDateOfJoining());
-            employeeUpdate.setDesignation(employee.getDesignation());
-            employeeUpdate.setCategory(employee.getCategory());
-            employeeUpdate.setProjectId(employee.getProjectId());
-            employeeUpdate.setLeadId(employee.getLeadId());
-            employeeUpdate.setOrganizationId(employee.getOrganizationId());
-            employeeUpdate.setBand(employee.getBand());
-//            employeeUpdate.setDateOfLeaving(employee.getDateOfLeaving());
-
-            employeeService.saveUpdateEmployee(employeeUpdate);
+            employeeService.saveUpdateEmployee(employeeDetailsFromDb);
             return true;
         }
         else {
+            log.info("Employee with employee ID: " + employeeUpdateDetailsFromClient.getId() + " is not present");
             return false;
         }
     }
 
-    public void updateEmployeeHistory(Employee employee, Employee employeeUpdate){
-        EmployeeHistory employeeHistoryUpdate = employeeHistoryService.getLastActiveRecordByEmpId(employee.getId());
+    public void updateEmployeeHistory(EmployeeUpdateDetails employeeUpdateDetailsFromClient){
+        Optional<EmployeeHistory> employeeHistoryUpdate = employeeHistoryService.getLastActiveRecordByEmpId(employeeUpdateDetailsFromClient.getId());
 
-        EmployeeHistory employeeHistoryUpdateObj = new EmployeeHistory();
+        if (employeeHistoryUpdate.isPresent()) {
+            EmployeeHistory employeeHistoryUpdateObj = new EmployeeHistory();
+            EmployeeHistory employeeHistoryDetailsFromDb = employeeHistoryUpdate.get();
 
-//        employeeHistoryUpdateObj.setEmpId(employeeHistoryUpdate.getEmpId());
-        employeeHistoryUpdateObj.setName(employeeHistoryUpdate.getName());
-        employeeHistoryUpdateObj.setLeadId(employeeHistoryUpdate.getLeadId());
-        employeeHistoryUpdateObj.setClientCounterpartId(employeeHistoryUpdate.getClientCounterpartId());
-        employeeHistoryUpdateObj.setOrganizationId(employeeHistoryUpdate.getOrganizationId());
-        employeeHistoryUpdateObj.setFromDate(employeeHistoryUpdate.getFromDate());
-        employeeHistoryUpdateObj.setToDate(employeeHistoryUpdate.getToDate());
-        employeeHistoryUpdateObj.setEditorId(employeeHistoryUpdate.getEditorId());
-        employeeHistoryUpdateObj.setProjectId(employeeHistoryUpdate.getProjectId());
-        employeeHistoryUpdateObj.setDateOfJoiningProject(employeeHistoryUpdate.getDateOfJoiningProject());
-        employeeHistoryUpdateObj.setDateOfLeavingProject(employeeHistoryUpdate.getDateOfLeavingProject());
-        employeeHistoryUpdateObj.setStatus(employeeHistoryUpdate.getStatus());
+            employeeHistoryUpdateObj = employeeHistoryService.compareDetails(employeeHistoryUpdateObj, employeeHistoryDetailsFromDb);
 
-
-        if (!Objects.equals(employee.getName(), employeeUpdate.getName())) {
-            employeeHistoryUpdateObj.setName(employee.getName());
+            employeeHistoryService.createNewRecordInEmployeeHistory(employeeHistoryUpdateObj);
         }
-        if (employee.getLeadId() != employeeUpdate.getLeadId()) {
-            employeeHistoryUpdateObj.setLeadId(employee.getLeadId());
+       else {
+            log.debug("Employee with employee ID: " + employeeUpdateDetailsFromClient.getId() + " has no previous history");
+            return;
         }
-        if (employee.getOrganizationId() != employeeUpdate.getOrganizationId()) {
-            employeeHistoryUpdateObj.setOrganizationId(employee.getOrganizationId());
-        }
-        if (employee.getProjectId() != employeeUpdate.getProjectId()) {
-            employeeHistoryUpdateObj.setProjectId(employee.getProjectId());
-        }
-        employeeHistoryService.createNewRecordInEmployeeHistory(employeeHistoryUpdateObj);
     }
-
-
 }
-
-
-
-
