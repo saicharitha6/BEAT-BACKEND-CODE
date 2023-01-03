@@ -11,8 +11,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200/profile")
 @RequestMapping(value = PathConstants.employeePath)
 public class EmployeeController {
     @Autowired
@@ -33,10 +35,16 @@ public class EmployeeController {
     }
 
     @GetMapping(value = PathConstants.getPath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    private ResponseEntity<List<Employee>> getEmployee() {
-        List<Employee> empList = this.employeeService.getEmployee();
-        if (empList.size() == 0) return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-        else return ResponseEntity.ok().body(this.employeeService.getEmployee());
+    private ResponseEntity<Employee> getEmployee(@PathVariable String id) {
+        long empId = Long.valueOf(id);
+        Optional<Employee> empDetails = this.employeeService.getEmployeeObj(empId);
+        if (empDetails.isPresent()){
+            return ResponseEntity.ok().body(empDetails.get());
+        }
+        else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+
+        }
     }
 
     @PutMapping(value = PathConstants.disablePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
