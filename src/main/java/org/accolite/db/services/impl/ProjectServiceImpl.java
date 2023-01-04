@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Project;
 import org.accolite.db.repo.ProjectRepository;
 import org.accolite.db.services.ProjectService;
+import org.accolite.pojo.ProjectCard;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,9 +23,15 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Optional<Project> getProjectObj(long id) {
+    public Optional<Project> getProjectById(long id) {
         Optional<Project> projectFromDbObj = projectRepository.findById(id);
         return projectFromDbObj;
+    }
+
+    @Override
+    public List<Project> getProjectsByName(String name) {
+        List<Project> projectList = projectRepository.findAllByName(name);
+        return projectList;
     }
 
     @Override
@@ -33,7 +40,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Project disableProject(Project project) {
+    public boolean disableProject(Project project) {
         Optional<Project> prjObj = this.projectRepository.findById(project.getId());
 
         if (prjObj.isPresent()) {
@@ -41,11 +48,11 @@ public class ProjectServiceImpl implements ProjectService {
             projectUpdate.setStatus(false);
 
             projectRepository.save(projectUpdate);
-            return projectUpdate;
+            return true;
         }
         else {
-            log.debug("Employee with employee ID: " + project.getId() + "is not present");
-            return project;
+            log.info("Employee with employee ID: " + project.getId() + "is not present");
+            return false;
         }
     }
 
@@ -64,7 +71,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Project compareDetails(Project projectUpdate, Project project) {
+    public Project cloneDetails(Project projectUpdate, Project project) {
         projectUpdate.setId(project.getId());
         projectUpdate.setName(project.getName());
         projectUpdate.setOrganization(project.getOrganization());
@@ -79,4 +86,12 @@ public class ProjectServiceImpl implements ProjectService {
         return projectUpdate;
     }
 
+    @Override
+    public ProjectCard cloneToProjectCard(ProjectCard curProjectCard, Project curProject) {
+        curProjectCard.setId(curProject.getId());
+        curProjectCard.setName(curProject.getName());
+        curProjectCard.setOrganization(curProject.getOrganization());
+        curProjectCard.setProjectManager(curProject.getProjectManager());
+        return curProjectCard;
+    }
 }

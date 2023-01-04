@@ -20,6 +20,7 @@ public final class PathConstants  {
     public static final String updatePath = "/update";
     public static final String getPath = "/get/{id}";
     public static final String disablePath = "/disable";
-
-
+    public static final String getById = "/get/{id}";
+    public static final String getHierarchy = "/getHierarchy/{id}";
+    public static final String search = "/search/{name}";
 }
