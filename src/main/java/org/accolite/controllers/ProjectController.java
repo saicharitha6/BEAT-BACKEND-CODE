@@ -28,8 +28,8 @@ public class ProjectController {
     }
 
     @PutMapping(value = PathConstants.updatePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
-    private ResponseEntity<String> updateProject(@RequestBody Project project){
-        boolean prjUpdated = projectComponent.updateProject(project);
+    private ResponseEntity<String> updateProject(@RequestBody ProjectUpdateDetails projectUpdateDetailsFromClient){
+        boolean prjUpdated = projectComponent.updateProject(projectUpdateDetailsFromClient);
         if (prjUpdated) return ResponseEntity.ok().body("Project updated");
         else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }

@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Project;
 import org.accolite.db.services.ProjectService;
 import org.accolite.pojo.ProjectCard;
+import org.accolite.pojo.ProjectUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,29 +18,31 @@ public class ProjectComponent {
     @Autowired
     ProjectService projectService;
 
-    public boolean updateProject(Project project) {
-        Optional<Project> projectFromDbObj = projectService.getProjectById(project.getId());
+    public boolean updateProject(ProjectUpdateDetails projectUpdateDetailsFromClient) {
+        Optional<Project> projectFromDbObj = projectService.getProjectById(projectUpdateDetailsFromClient.getId());
 
         if (projectFromDbObj.isPresent()) {
-            Project projectUpdate = projectFromDbObj.get();
+            Project projectDetailsFromDb = projectFromDbObj.get();
+            ProjectUpdateDetails projectUpdateDetailsFromDb = new ProjectUpdateDetails();
 
-            if (projectUpdate.equals(project)) {
-                log.info("No changes detected in project with project ID: " + project.getId());
+            projectUpdateDetailsFromDb = projectService.cloneToProjectUpdateDetails(projectUpdateDetailsFromDb, projectDetailsFromDb);
+            if (projectUpdateDetailsFromClient.equals(projectUpdateDetailsFromDb)) {
+                log.info("No changes detected in project with project ID: " + projectUpdateDetailsFromDb.getId());
                 return false;
             }
-            if (!projectUpdate.isStatus()) {
-                log.info("Project with project ID: " + project.getId() + " has already ended");
+            if (!projectDetailsFromDb.isStatus()) {
+                log.info("Project with project ID: " + projectDetailsFromDb.getId() + " has already ended");
                 return false;
             }
 
-            projectUpdate = projectService.cloneDetails(projectUpdate, project);
+            projectDetailsFromDb = projectService.cloneToProject(projectDetailsFromDb, projectUpdateDetailsFromClient);
 
-            projectService.saveUpdateProject(projectUpdate);
+            projectService.saveUpdateProject(projectDetailsFromDb);
 
             return true;
         }
         else {
-            log.info("Project with project ID: " + project.getId() + " is not present");
+            log.info("Project with project ID: " + projectUpdateDetailsFromClient.getId() + " is not present");
             return false;
         }
     }

@@ -5,6 +5,7 @@ import org.accolite.db.entities.Project;
 import org.accolite.db.repo.ProjectRepository;
 import org.accolite.db.services.ProjectService;
 import org.accolite.pojo.ProjectCard;
+import org.accolite.pojo.ProjectUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -71,19 +72,30 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Project cloneDetails(Project projectUpdate, Project project) {
-        projectUpdate.setId(project.getId());
-        projectUpdate.setName(project.getName());
-        projectUpdate.setOrganization(project.getOrganization());
-        projectUpdate.setProjectManager(project.getProjectManager());
-        projectUpdate.setStartDate(project.getStartDate());
-        projectUpdate.setLocation(project.getLocation());
-        projectUpdate.setEndDate(project.getEndDate());
-        projectUpdate.setDescription(project.getDescription());
-        projectUpdate.setProjectType(project.getProjectType());
-        projectUpdate.setEditorId(project.getEditorId());
-        projectUpdate.setStatus(project.isStatus());
-        return projectUpdate;
+    public ProjectUpdateDetails cloneToProjectUpdateDetails(ProjectUpdateDetails projectUpdateDetailsFromDb, Project projectDetailsFromDb) {
+        projectUpdateDetailsFromDb.setId(projectDetailsFromDb.getId());
+        projectUpdateDetailsFromDb.setName(projectDetailsFromDb.getName());
+        projectUpdateDetailsFromDb.setOrganization(projectDetailsFromDb.getOrganization());
+        projectUpdateDetailsFromDb.setProjectManager(projectDetailsFromDb.getProjectManager());
+        projectUpdateDetailsFromDb.setLocation(projectDetailsFromDb.getLocation());
+        projectUpdateDetailsFromDb.setDescription(projectDetailsFromDb.getDescription());
+        projectUpdateDetailsFromDb.setProjectType(projectDetailsFromDb.getProjectType());
+
+        return projectUpdateDetailsFromDb;
+    }
+
+    @Override
+    public Project cloneToProject(Project projectDetailsFromDb, ProjectUpdateDetails projectUpdateDetailsFromClient) {
+
+        projectDetailsFromDb.setId(projectUpdateDetailsFromClient.getId());
+        projectDetailsFromDb.setName(projectUpdateDetailsFromClient.getName());
+        projectDetailsFromDb.setOrganization(projectUpdateDetailsFromClient.getOrganization());
+        projectDetailsFromDb.setProjectManager(projectUpdateDetailsFromClient.getProjectManager());
+        projectDetailsFromDb.setLocation(projectUpdateDetailsFromClient.getLocation());
+        projectDetailsFromDb.setDescription(projectUpdateDetailsFromClient.getDescription());
+        projectDetailsFromDb.setProjectType(projectUpdateDetailsFromClient.getProjectType());
+
+        return projectDetailsFromDb;
     }
 
     @Override
