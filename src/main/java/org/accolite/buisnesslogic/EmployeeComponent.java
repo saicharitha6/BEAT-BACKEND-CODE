@@ -97,7 +97,7 @@ public class EmployeeComponent {
         }
         else {
             log.info("Employee with employee ID:" + id + "is not present");
-            return Collections.EMPTY_LIST;
+            return hierarchyList;
         }
     }
 
@@ -110,5 +110,10 @@ public class EmployeeComponent {
             employeeCardList.add(this.employeeService.cloneToEmployeeCard(curEmployeeCard, curEmployee));
         }
         return employeeCardList;
+    }
+
+    public List<EmployeeHistory> getEmployeeHistoryById(long id) {
+        List<EmployeeHistory> employeeHistoryList = this.employeeHistoryService.getEmployeeHistoryRecords(id);
+        return employeeHistoryList;
     }
 }
