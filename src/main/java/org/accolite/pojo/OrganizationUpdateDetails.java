@@ -1,17 +1,12 @@
-package org.accolite.db.entities;
+package org.accolite.pojo;
 
 import jakarta.annotation.Nullable;
-import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-@Entity
 @Data
-@Table(name="ORGANIZATION")
 @EqualsAndHashCode
-public class Organization {
-
-    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+public class OrganizationUpdateDetails {
     private long id;
     private String orgName;
     private String location;
@@ -19,5 +14,4 @@ public class Organization {
     @Nullable
     private long ownerEmpId;
     private long parentOrg;
-    private boolean status;
 }

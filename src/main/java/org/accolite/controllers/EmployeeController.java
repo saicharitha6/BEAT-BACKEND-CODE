@@ -35,7 +35,7 @@ public class EmployeeController {
         else return ResponseEntity.notFound().build();
     }
 
-    @GetMapping(value = PathConstants.getPath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = PathConstants.getPath, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<List<Employee>> getEmployee() {
         List<Employee> empList = this.employeeService.getEmployee();
         if (empList.size() == 0) return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
@@ -43,27 +43,27 @@ public class EmployeeController {
     }
 
     @PutMapping(value = PathConstants.disablePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
-    private ResponseEntity<String> disableEmployee(@RequestBody Employee employee) {
-        boolean empDisabled = this.employeeService.disableEmployee(employee);
+    private ResponseEntity<String> disableEmployee(@PathVariable long id) {
+        boolean empDisabled = this.employeeService.disableEmployee(id);
         if (empDisabled) return ResponseEntity.ok().body("Employee disabled");
         else return ResponseEntity.notFound().build();
     }
 
-    @GetMapping(value = PathConstants.getById, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = PathConstants.getByIdPath, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<Employee> getEmployeeById(@PathVariable long id){
         Optional<Employee> employeeFromDbObj = employeeService.getEmployeeById(id);
         if (employeeFromDbObj.isPresent()) return ResponseEntity.ok().body(employeeFromDbObj.get());
         else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
-    @GetMapping(value = PathConstants.getHierarchy, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = PathConstants.getHierarchyPath, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<List<EmployeeCard>> getEmployeeHierarchy(@PathVariable long id) {
         List<EmployeeCard> empCardList = this.employeeComponent.getEmployeeHierarchy(id);
         if (empCardList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         else return ResponseEntity.ok().body(empCardList);
     }
 
-    @GetMapping(value = PathConstants.search, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = PathConstants.searchPath, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<List<EmployeeCard>> searchEmployee(@PathVariable String name){
         List<EmployeeCard> empCardList = this.employeeComponent.getEmployeeCardsByName(name);
         if(empCardList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();

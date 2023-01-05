@@ -18,9 +18,9 @@ public final class PathConstants  {
 
     public static final String createPath = "/create";
     public static final String updatePath = "/update";
-    public static final String getPath = "/get/{id}";
-    public static final String disablePath = "/disable";
-    public static final String getById = "/get/{id}";
-    public static final String getHierarchy = "/getHierarchy/{id}";
-    public static final String search = "/search/{name}";
+    public static final String getPath = "/get";
+    public static final String disablePath = "/disable/{id}";
+    public static final String getByIdPath = "/get/{id}";
+    public static final String getHierarchyPath = "/getHierarchy/{id}";
+    public static final String searchPath = "/search/{name}";
 }

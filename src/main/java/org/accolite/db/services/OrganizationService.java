@@ -2,6 +2,7 @@ package org.accolite.db.services;
 
 import org.accolite.db.entities.Organization;
 import org.accolite.pojo.OrganizationCard;
+import org.accolite.pojo.OrganizationUpdateDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,9 +13,10 @@ public interface OrganizationService {
     Organization createOrganization(Organization organization);
     Optional<Organization> getOrganizationById(long id);
     List<Organization> getOrganization();
-    boolean disableOrganization(Organization organization);
+    boolean disableOrganization(long id);
     boolean saveUpdateOrganization(Organization organization);
-    Organization cloneDetails(Organization organizationUpdate, Organization organization);
+    OrganizationUpdateDetails cloneToOrganizationUpdateDetails(OrganizationUpdateDetails organizationUpdateDetailsFromDb, Organization organizationDetailsFromDb);
+    Organization cloneToOrganization(Organization organizationDetailsFromDb, OrganizationUpdateDetails organizationUpdateDetailsFromClient);
     String getOrganizationName(long organizationId);
     OrganizationCard getParentCard(long parentOrg);
     OrganizationCard cloneToOrganizationCard(OrganizationCard curOrganizationCard, Organization curOrganization);
