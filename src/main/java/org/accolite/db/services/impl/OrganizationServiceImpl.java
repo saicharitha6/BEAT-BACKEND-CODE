@@ -1,10 +1,13 @@
 package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
+import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.Organization;
 import org.accolite.db.repo.OrganizationRepository;
 import org.accolite.db.services.OrganizationService;
+import org.accolite.pojo.EmployeeUpdateDetails;
 import org.accolite.pojo.OrganizationCard;
+import org.accolite.pojo.OrganizationUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,8 +41,8 @@ public class OrganizationServiceImpl implements OrganizationService {
     public List<Organization> getOrganization() { return this.organizationRepository.findAll(); }
 
     @Override
-    public boolean disableOrganization(Organization organization) {
-        Optional<Organization> orgObj = this.organizationRepository.findById(organization.getId());
+    public boolean disableOrganization(long id) {
+        Optional<Organization> orgObj = this.organizationRepository.findById(id);
         if (orgObj.isPresent()) {
             Organization organizationUpdate = orgObj.get();
             organizationUpdate.setStatus(false);
@@ -48,7 +51,7 @@ public class OrganizationServiceImpl implements OrganizationService {
             return true;
         }
         else {
-            log.info("Employee with employee ID: " + organization.getId() + "is not present");
+            log.info("Employee with employee ID: " + id + "is not present");
             return false;
         }
     }
@@ -68,16 +71,27 @@ public class OrganizationServiceImpl implements OrganizationService {
     }
 
     @Override
-    public Organization cloneDetails(Organization organizationUpdate, Organization organization) {
+    public OrganizationUpdateDetails cloneToOrganizationUpdateDetails(OrganizationUpdateDetails organizationUpdateDetailsFromDb, Organization organizationDetailsFromDb) {
+        organizationUpdateDetailsFromDb.setId(organizationDetailsFromDb.getId());
+        organizationUpdateDetailsFromDb.setOrgName(organizationDetailsFromDb.getOrgName());
+        organizationUpdateDetailsFromDb.setLocation(organizationDetailsFromDb.getLocation());
+        organizationUpdateDetailsFromDb.setOwner(organizationDetailsFromDb.getOwner());
+        organizationUpdateDetailsFromDb.setOwnerEmpId(organizationDetailsFromDb.getOwnerEmpId());
+        organizationUpdateDetailsFromDb.setParentOrg(organizationDetailsFromDb.getParentOrg());
+        return organizationUpdateDetailsFromDb;
+    }
 
-        organizationUpdate.setId(organization.getId());
-        organizationUpdate.setOrgName(organization.getOrgName());
-        organizationUpdate.setLocation(organization.getLocation());
-        organizationUpdate.setOwner(organization.getOwner());
-        organizationUpdate.setOwnerEmpId(organization.getOwnerEmpId());
-        organizationUpdate.setParentOrg(organization.getParentOrg());
-        organizationUpdate.setStatus(organization.isStatus());
-        return organizationUpdate;
+    @Override
+    public Organization cloneToOrganization(Organization organizationDetailsFromDb, OrganizationUpdateDetails organizationUpdateDetailsFromClient) {
+
+        organizationDetailsFromDb.setId(organizationUpdateDetailsFromClient.getId());
+        organizationDetailsFromDb.setOrgName(organizationUpdateDetailsFromClient.getOrgName());
+        organizationDetailsFromDb.setLocation(organizationUpdateDetailsFromClient.getLocation());
+        organizationDetailsFromDb.setOwner(organizationUpdateDetailsFromClient.getOwner());
+        organizationDetailsFromDb.setOwnerEmpId(organizationUpdateDetailsFromClient.getOwnerEmpId());
+        organizationDetailsFromDb.setParentOrg(organizationUpdateDetailsFromClient.getParentOrg());
+
+        return organizationDetailsFromDb;
     }
 
     @Override

@@ -46,8 +46,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public boolean disableEmployee(Employee employee) {
-        Optional<Employee> empObj = this.employeeRepository.findById(employee.getId());
+    public boolean disableEmployee(long id) {
+        Optional<Employee> empObj = this.employeeRepository.findById(id);
         Date date = new Date();
         if (empObj.isPresent()) {
             Employee employeeUpdate = empObj.get();
@@ -56,7 +56,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             employeeRepository.save(employeeUpdate);
             return true;
         } else {
-            log.info("Employee with employee ID: " + employee.getId() + " is not present");
+            log.info("Employee with employee ID: " + id + " is not present");
             return false;
         }
     }

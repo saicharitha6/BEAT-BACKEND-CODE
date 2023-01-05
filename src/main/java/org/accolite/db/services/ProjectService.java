@@ -13,7 +13,7 @@ public interface ProjectService {
     Optional<Project> getProjectById(long id);
     List<Project> getProjectsByName(String name);
     List<Project> getProject();
-    boolean disableProject(Project project);
+    boolean disableProject(long id);
     boolean saveUpdateProject(Project project);
     Project cloneDetails(Project projectUpdate, Project project);
     ProjectCard cloneToProjectCard(ProjectCard curProjectCard, Project curProject);

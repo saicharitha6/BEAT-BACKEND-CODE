@@ -14,7 +14,7 @@ public interface EmployeeService {
     Optional<Employee> getEmployeeById(long id);
     List<Employee> getEmployeesByName(String name);
     List<Employee> getEmployee();
-    boolean disableEmployee(Employee employee);
+    boolean disableEmployee(long id);
     boolean saveUpdateEmployee(Employee employee);
     EmployeeUpdateDetails cloneDetails(EmployeeUpdateDetails employeeUpdateDetailsFromDb, Employee employeeDetailsFromDb);
     Employee cloneToEmployee(Employee employeeUpdateDetailsFromDb, EmployeeUpdateDetails employeeDetailsFromDb);

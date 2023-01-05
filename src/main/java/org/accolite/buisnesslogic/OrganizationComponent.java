@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Organization;
 import org.accolite.db.services.OrganizationService;
 import org.accolite.pojo.OrganizationCard;
+import org.accolite.pojo.OrganizationUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,28 +19,29 @@ public class OrganizationComponent {
     @Autowired
     OrganizationService organizationService;
 
-    public boolean updateOrganization(Organization organization) {
-        Optional<Organization> organizationFromDbObj = organizationService.getOrganizationById(organization.getId());
+    public boolean updateOrganization(OrganizationUpdateDetails organizationUpdateDetailsFromClient) {
+        Optional<Organization> organizationFromDbObj = organizationService.getOrganizationById(organizationUpdateDetailsFromClient.getId());
 
         if (organizationFromDbObj.isPresent()) {
-            Organization organizationUpdate = organizationFromDbObj.get();
+            Organization organizationDetailsFromDb = organizationFromDbObj.get();
+            OrganizationUpdateDetails organizationUpdateDetailsFromDb = new OrganizationUpdateDetails();
+            organizationUpdateDetailsFromDb = organizationService.cloneToOrganizationUpdateDetails(organizationUpdateDetailsFromDb, organizationDetailsFromDb);
 
-            if (organizationUpdate.equals(organization)) {
-                log.info("No changes detected in organization with organization ID: " + organization.getId());
+            if (organizationUpdateDetailsFromClient.equals(organizationUpdateDetailsFromDb)) {
+                log.info("No changes detected in organization with organization ID: " + organizationUpdateDetailsFromDb.getId());
                 return false;
             }
-            if (!organizationUpdate.isStatus()) {
-                log.info("Organization with organization ID: " + organization.getId() + " is currently inactive");
+            if (!organizationDetailsFromDb.isStatus()) {
+                log.info("Organization with organization ID: " + organizationDetailsFromDb.getId() + " is currently inactive");
                 return false;
             }
+            organizationDetailsFromDb = organizationService.cloneToOrganization(organizationDetailsFromDb, organizationUpdateDetailsFromClient);
 
-            organizationUpdate = organizationService.cloneDetails(organizationUpdate, organization);
-
-            organizationService.saveUpdateOrganization(organizationUpdate);
+            organizationService.saveUpdateOrganization(organizationDetailsFromDb);
             return true;
         }
         else {
-            log.info("Organization with organization ID: " + organization.getId() + " is not present");
+            log.info("Organization with organization ID: " + organizationUpdateDetailsFromClient.getId() + " is not present");
             return false;
         }
     }
@@ -70,7 +72,7 @@ public class OrganizationComponent {
         }
         else {
             log.info("Organization with organization ID:" + id + "is not present");
-            return Collections.EMPTY_LIST;
+            return hierarchyList;
         }
     }
 

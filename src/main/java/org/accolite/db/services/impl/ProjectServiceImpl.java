@@ -40,8 +40,8 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public boolean disableProject(Project project) {
-        Optional<Project> prjObj = this.projectRepository.findById(project.getId());
+    public boolean disableProject(long id) {
+        Optional<Project> prjObj = this.projectRepository.findById(id);
 
         if (prjObj.isPresent()) {
             Project projectUpdate = prjObj.get();
@@ -51,7 +51,7 @@ public class ProjectServiceImpl implements ProjectService {
             return true;
         }
         else {
-            log.info("Employee with employee ID: " + project.getId() + "is not present");
+            log.info("Employee with employee ID: " + id + " is not present");
             return false;
         }
     }
