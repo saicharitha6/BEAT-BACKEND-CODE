@@ -1,12 +1,14 @@
 package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
+import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.repo.EmployeeHistoryRepository;
 import org.accolite.pojo.EmployeeUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -52,5 +54,10 @@ public class EmployeeHistoryService {
         employeeHistoryUpdateObj.setProjectId(employeeUpdateDetailsFromClient.getProjectId());
 
         return employeeHistoryUpdateObj;
+    }
+
+    public List<EmployeeHistory> getEmployeeHistoryRecords(long id) {
+        List<EmployeeHistory> employeeHistoryList = employeeHistoryRepository.findAllByEmpId(id);
+        return employeeHistoryList;
     }
 }

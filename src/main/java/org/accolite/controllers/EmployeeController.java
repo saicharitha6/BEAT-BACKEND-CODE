@@ -2,6 +2,7 @@ package org.accolite.controllers;
 
 import org.accolite.buisnesslogic.EmployeeComponent;
 import org.accolite.db.entities.Employee;
+import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.services.EmployeeService;
 import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.EmployeeUpdateDetails;
@@ -25,6 +26,8 @@ public class EmployeeController {
 
     @PostMapping(value = PathConstants.createPath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
+//        Employee employeeCreated = this.employeeService.createEmployee(employee);
+//        this.employeeComponent.createNewEmployeeHistoryRecord(employeeCreated);
         return ResponseEntity.ok().body(this.employeeService.createEmployee(employee));
     }
 
@@ -68,5 +71,12 @@ public class EmployeeController {
         List<EmployeeCard> empCardList = this.employeeComponent.getEmployeeCardsByName(name);
         if(empCardList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         else return ResponseEntity.ok().body(empCardList);
+    }
+
+    @GetMapping(value = PathConstants.getHistoryByIdPath, produces = MediaType.APPLICATION_JSON_VALUE)
+    private ResponseEntity<List<EmployeeHistory>> getEmployeeHistoryById(@PathVariable long id){
+        List<EmployeeHistory> empHisList = this.employeeComponent.getEmployeeHistoryById(id);
+        if(empHisList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        else return ResponseEntity.ok().body(empHisList);
     }
 }
