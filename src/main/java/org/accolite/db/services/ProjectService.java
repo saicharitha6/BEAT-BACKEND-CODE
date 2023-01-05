@@ -2,6 +2,7 @@ package org.accolite.db.services;
 
 import org.accolite.db.entities.Project;
 import org.accolite.pojo.ProjectCard;
+import org.accolite.pojo.ProjectUpdateDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public interface ProjectService {
     List<Project> getProject();
     boolean disableProject(long id);
     boolean saveUpdateProject(Project project);
-    Project cloneDetails(Project projectUpdate, Project project);
+    ProjectUpdateDetails cloneToProjectUpdateDetails(ProjectUpdateDetails projectUpdateDetailsFromDb, Project projectDetailsFromDb);
+    Project cloneToProject(Project projectDetailsFromDb, ProjectUpdateDetails projectUpdateDetailsFromClient);
     ProjectCard cloneToProjectCard(ProjectCard curProjectCard, Project curProject);
 }

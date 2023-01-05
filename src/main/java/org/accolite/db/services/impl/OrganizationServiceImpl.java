@@ -1,11 +1,9 @@
 package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
-import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.Organization;
 import org.accolite.db.repo.OrganizationRepository;
 import org.accolite.db.services.OrganizationService;
-import org.accolite.pojo.EmployeeUpdateDetails;
 import org.accolite.pojo.OrganizationCard;
 import org.accolite.pojo.OrganizationUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
