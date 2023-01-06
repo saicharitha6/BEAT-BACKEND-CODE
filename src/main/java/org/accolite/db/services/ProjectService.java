@@ -19,4 +19,5 @@ public interface ProjectService {
     ProjectUpdateDetails cloneToProjectUpdateDetails(ProjectUpdateDetails projectUpdateDetailsFromDb, Project projectDetailsFromDb);
     Project cloneToProject(Project projectDetailsFromDb, ProjectUpdateDetails projectUpdateDetailsFromClient);
     ProjectCard cloneToProjectCard(ProjectCard curProjectCard, Project curProject);
+    String getProjectName (long projectId);
 }

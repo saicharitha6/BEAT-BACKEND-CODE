@@ -20,8 +20,4 @@ public class Login {
     private String password;
 
     private long accessId;
-
-
 }
-
-

@@ -1,7 +1,6 @@
 package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
-import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.repo.EmployeeHistoryRepository;
 import org.accolite.pojo.EmployeeUpdateDetails;

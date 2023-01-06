@@ -31,6 +31,8 @@ public class LoginController {
     @Autowired
     ObjectFactory<HttpSession> httpSessionFactory;
 
+    long editorId;
+
     @PostMapping(value = PathConstants.loginPath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<LoginResponse> login(@RequestBody LoginDetails loginDetailsFromClient) {
         HttpSession session = httpSessionFactory.getObject();
@@ -44,6 +46,7 @@ public class LoginController {
                 loginResponse.setJwt(sessionDetails.getJwt());
                 loginResponse.setEmpId(sessionDetails.getEmpId());
                 loginResponse.setAccessId(access.access);
+                editorId =  sessionDetails.getEmpId();
                 return  ResponseEntity.ok().body(loginResponse);
 //                return ResponseEntity.ok().body("User logged in = "+((SessionDetails) session.getAttribute("sessionDetailsInSession")).toString());
             }
@@ -56,6 +59,11 @@ public class LoginController {
             log.debug("Invalid user details");
             return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).build();
         }
+    }
+
+    public long getCurrentLoggedInEmpId()
+    {
+        return editorId;
     }
 
     @GetMapping(value = PathConstants.accessPath,produces = MediaType.TEXT_PLAIN_VALUE)

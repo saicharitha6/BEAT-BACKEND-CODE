@@ -1,6 +1,7 @@
 package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
+import org.accolite.db.entities.Organization;
 import org.accolite.db.entities.Project;
 import org.accolite.db.repo.ProjectRepository;
 import org.accolite.db.services.ProjectService;
@@ -105,5 +106,18 @@ public class ProjectServiceImpl implements ProjectService {
         curProjectCard.setOrganization(curProject.getOrganization());
         curProjectCard.setProjectManager(curProject.getProjectManager());
         return curProjectCard;
+    }
+
+    @Override
+    public String getProjectName (long projectId) {
+        Optional<Project> projectFromDbObj = projectRepository.findById(projectId);
+        if (projectFromDbObj.isPresent()) {
+            Project projectFromDb = projectFromDbObj.get();
+            return projectFromDb.getName();
+        }
+        else {
+            log.info("This employee is not related to any project");
+            return null;
+        }
     }
 }
