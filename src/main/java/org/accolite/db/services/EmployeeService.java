@@ -3,6 +3,7 @@ package org.accolite.db.services;
 import org.accolite.db.entities.Employee;
 import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.EmployeeUpdateDetails;
+import org.accolite.pojo.ProfileDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,4 +21,6 @@ public interface EmployeeService {
     Employee cloneToEmployee(Employee employeeUpdateDetailsFromDb, EmployeeUpdateDetails employeeDetailsFromDb);
     EmployeeCard getLeadCard(long leadId);
     EmployeeCard cloneToEmployeeCard(EmployeeCard curEmployeeCard, Employee curEmployee);
+    ProfileDetails cloneEmployeeToProfile(ProfileDetails profileDetails, Employee employee);
+    String getLeadName(long leadId);
 }

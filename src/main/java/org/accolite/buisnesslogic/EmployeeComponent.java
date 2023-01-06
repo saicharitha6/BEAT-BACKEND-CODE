@@ -1,5 +1,6 @@
 package org.accolite.buisnesslogic;
 
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.EmployeeHistory;
@@ -7,6 +8,8 @@ import org.accolite.db.services.impl.EmployeeHistoryService;
 import org.accolite.db.services.EmployeeService;
 import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.EmployeeUpdateDetails;
+import org.accolite.pojo.SessionDetails;
+import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +21,7 @@ public class EmployeeComponent {
 
     @Autowired
     EmployeeService employeeService;
+
 
     @Autowired
     EmployeeHistoryService employeeHistoryService;
@@ -115,5 +119,21 @@ public class EmployeeComponent {
     public List<EmployeeHistory> getEmployeeHistoryById(long id) {
         List<EmployeeHistory> employeeHistoryList = this.employeeHistoryService.getEmployeeHistoryRecords(id);
         return employeeHistoryList;
+    }
+
+    public void createEmployeeHistoryForNewEmployee(Employee employee) {
+        EmployeeHistory newEmployeeHistory = new EmployeeHistory();
+        newEmployeeHistory.setEmpId(employee.getId());
+        newEmployeeHistory.setName(employee.getName());
+        newEmployeeHistory.setLeadId(employee.getLeadId());
+        newEmployeeHistory.setClientCounterpartId(employee.getClientCounterpartId());
+        newEmployeeHistory.setOrganizationId(employee.getOrganizationId());
+        newEmployeeHistory.setProjectId(employee.getProjectId());
+
+        Date date = new Date();
+        newEmployeeHistory.setFromDate(date);
+
+        newEmployeeHistory.setStatus(true);
+        employeeHistoryService.createNewRecordInEmployeeHistory(newEmployeeHistory);
     }
 }

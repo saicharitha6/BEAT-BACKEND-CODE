@@ -6,6 +6,7 @@ import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.services.EmployeeService;
 import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.EmployeeUpdateDetails;
+import org.accolite.pojo.ProfileDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -26,8 +27,8 @@ public class EmployeeController {
 
     @PostMapping(value = PathConstants.createPath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
-//        Employee employeeCreated = this.employeeService.createEmployee(employee);
-//        this.employeeComponent.createNewEmployeeHistoryRecord(employeeCreated);
+        Employee employeeCreated = this.employeeService.createEmployee(employee);
+        this.employeeComponent.createEmployeeHistoryForNewEmployee(employeeCreated);
         return ResponseEntity.ok().body(this.employeeService.createEmployee(employee));
     }
 
@@ -53,9 +54,14 @@ public class EmployeeController {
     }
 
     @GetMapping(value = PathConstants.getByIdPath, produces = MediaType.APPLICATION_JSON_VALUE)
-    private ResponseEntity<Employee> getEmployeeById(@PathVariable long id){
+    private ResponseEntity<ProfileDetails> getEmployeeById(@PathVariable long id){
         Optional<Employee> employeeFromDbObj = employeeService.getEmployeeById(id);
-        if (employeeFromDbObj.isPresent()) return ResponseEntity.ok().body(employeeFromDbObj.get());
+        if (employeeFromDbObj.isPresent()) {
+            Employee employeeFromDb = employeeFromDbObj.get();
+            ProfileDetails profileDetails = new ProfileDetails();
+            profileDetails = this.employeeService.cloneEmployeeToProfile(profileDetails, employeeFromDb);
+            return ResponseEntity.ok().body(profileDetails);
+        }
         else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
