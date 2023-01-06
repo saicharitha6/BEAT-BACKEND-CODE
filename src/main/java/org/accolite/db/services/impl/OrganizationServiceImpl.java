@@ -20,6 +20,7 @@ public class OrganizationServiceImpl implements OrganizationService {
 
     @Override
     public Organization createOrganization(Organization organization) {
+        organization.setStatus(true);
         return organizationRepository.save(organization);
     }
 

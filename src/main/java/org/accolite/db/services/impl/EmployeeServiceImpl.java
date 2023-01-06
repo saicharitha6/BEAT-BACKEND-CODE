@@ -51,6 +51,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    public List<Employee> getEmployeesByProjectId(long id) {
+        List<Employee> employeeList = employeeRepository.findAllByProjectId(id);
+        return employeeList;
+    }
+
+    @Override
     public List<Employee> getEmployeesByName(String name) {
         List<Employee> employeeList = employeeRepository.findAllByName(name);
         return employeeList;
@@ -157,37 +163,26 @@ public class EmployeeServiceImpl implements EmployeeService {
         profileDetails.setDateOfLeaving(employee.getDateOfLeaving());
 
         String projectName = this.projectService.getProjectName(employee.getProjectId());
-        log.info("proj Id "+employee.getProjectId());
-        log.info("proj name "+projectName);
         String projectId = valueOf(employee.getProjectId());
         String projectIdName = projectName + " " + projectId;
         profileDetails.setProjectIdName(projectIdName);
 
         String leadName = getLeadName(employee.getLeadId());
-//        Employee empFromDb = employeeRepository.findByLeadId(employee.getProjectId());
-//        String leadName = empFromDb.getName();
-        log.info("lead Id"+employee.getLeadId());
-        log.info("lead name "+leadName);
         String leadId = valueOf(employee.getLeadId());
         String leadIdName = leadName + " " + leadId;
         profileDetails.setLeadIdName(leadIdName);
 
         String organizationName = this.organizationService.getOrganizationName(employee.getOrganizationId());
-        log.info("org Id"+employee.getOrganizationId());
-        log.info("org name "+organizationName);
         String organizationId = valueOf(employee.getOrganizationId());
         String organizationIdName = organizationName + " " + organizationId;
         profileDetails.setOrganizationIdName(organizationIdName);
 
         String clientCounterpartName = this.clientCounterpartService.getClientCounterpartName(employee.getClientCounterpartId());
-        log.info("client counterpart Id"+employee.getClientCounterpartId());
-        log.info("client counterpart name "+clientCounterpartName);
         String clientCounterpartId = valueOf(employee.getClientCounterpartId());
         String clientCounterpartIdName = clientCounterpartName + " " + clientCounterpartId;
         profileDetails.setClientCounterpartIdName(clientCounterpartIdName);
 
         String bandName = this.bandService.getBandName(employee.getBand());
-        log.info("band name "+bandName);
         profileDetails.setBandName(bandName);
 
         String email = this.loginService.getEmail(employee.getId());

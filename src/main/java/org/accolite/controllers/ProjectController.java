@@ -3,6 +3,7 @@ package org.accolite.controllers;
 import org.accolite.buisnesslogic.ProjectComponent;
 import org.accolite.db.entities.Project;
 import org.accolite.db.services.ProjectService;
+import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.ProjectCard;
 import org.accolite.pojo.ProjectUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,5 +61,12 @@ public class ProjectController {
         List<ProjectCard> prjCardList = this.projectComponent.getProjectCardsByName(name);
         if(prjCardList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         else return ResponseEntity.ok().body(prjCardList);
+    }
+
+    @GetMapping(value = PathConstants.getEmployeesInProjectByIdPath, produces = MediaType.APPLICATION_JSON_VALUE)
+    private ResponseEntity<List<EmployeeCard>> getEmployeesInProjectById(@PathVariable long id){
+        List<EmployeeCard> empCardList = this.projectComponent.getEmployeeCardsByProjectId(id);
+        if(empCardList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        else return ResponseEntity.ok().body(empCardList);
     }
 }

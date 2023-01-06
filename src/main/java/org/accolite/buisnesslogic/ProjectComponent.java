@@ -1,8 +1,11 @@
 package org.accolite.buisnesslogic;
 
 import lombok.extern.slf4j.Slf4j;
+import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.Project;
+import org.accolite.db.services.EmployeeService;
 import org.accolite.db.services.ProjectService;
+import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.ProjectCard;
 import org.accolite.pojo.ProjectUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +20,9 @@ import java.util.Optional;
 public class ProjectComponent {
     @Autowired
     ProjectService projectService;
+
+    @Autowired
+    EmployeeService employeeService;
 
     public boolean updateProject(ProjectUpdateDetails projectUpdateDetailsFromClient) {
         Optional<Project> projectFromDbObj = projectService.getProjectById(projectUpdateDetailsFromClient.getId());
@@ -56,5 +62,16 @@ public class ProjectComponent {
             projectCardList.add(this.projectService.cloneToProjectCard(curProjectCard, curProject));
         }
         return projectCardList;
+    }
+
+    public List<EmployeeCard> getEmployeeCardsByProjectId(long id) {
+        List<EmployeeCard> employeeCardList = new ArrayList<>();
+        List<Employee> employeeList = this.employeeService.getEmployeesByProjectId(id);
+        for (int i = 0; i < employeeList.size(); i++) {
+            Employee curEmployee = employeeList.get(i);
+            EmployeeCard curEmployeeCard = new EmployeeCard();
+            employeeCardList.add(this.employeeService.cloneToEmployeeCard(curEmployeeCard, curEmployee));
+        }
+        return employeeCardList;
     }
 }

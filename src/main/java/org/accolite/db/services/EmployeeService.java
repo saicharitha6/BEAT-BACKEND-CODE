@@ -13,6 +13,7 @@ import java.util.Optional;
 public interface EmployeeService {
     Employee createEmployee(Employee employee);
     Optional<Employee> getEmployeeById(long id);
+    List<Employee> getEmployeesByProjectId(long id);
     List<Employee> getEmployeesByName(String name);
     List<Employee> getEmployee();
     boolean disableEmployee(long id);
