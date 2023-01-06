@@ -9,6 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee,Long>{
-    Employee findByLeadId(long id);
+    List<Employee> findAllByProjectId(long id);
     List<Employee> findAllByName(String name);
 }

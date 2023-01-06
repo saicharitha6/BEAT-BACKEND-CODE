@@ -1,7 +1,6 @@
 package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
-import org.accolite.db.entities.Organization;
 import org.accolite.db.entities.Project;
 import org.accolite.db.repo.ProjectRepository;
 import org.accolite.db.services.ProjectService;
@@ -21,6 +20,7 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public Project createProject(Project project) {
+        project.setStatus(true);
         return projectRepository.save(project);
     }
 
