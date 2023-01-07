@@ -2,12 +2,10 @@ package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.ExpSlabs;
-import org.accolite.db.entities.SlabCharges;
 import org.accolite.db.repo.ExpSlabsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
