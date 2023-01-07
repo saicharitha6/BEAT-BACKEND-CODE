@@ -1,6 +1,5 @@
 package org.accolite.buisnesslogic;
 
-import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.EmployeeHistory;
@@ -8,8 +7,6 @@ import org.accolite.db.services.impl.EmployeeHistoryService;
 import org.accolite.db.services.EmployeeService;
 import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.EmployeeUpdateDetails;
-import org.accolite.pojo.SessionDetails;
-import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -121,7 +118,7 @@ public class EmployeeComponent {
         return employeeHistoryList;
     }
 
-    public void createEmployeeHistoryForNewEmployee(Employee employee) {
+    public void createEmployeeHistoryForNewEmployee(Employee employee, long editorId) {
         EmployeeHistory newEmployeeHistory = new EmployeeHistory();
         newEmployeeHistory.setEmpId(employee.getId());
         newEmployeeHistory.setName(employee.getName());
@@ -133,7 +130,43 @@ public class EmployeeComponent {
         Date date = new Date();
         newEmployeeHistory.setFromDate(date);
 
+        newEmployeeHistory.setEditorId(editorId);
+
         newEmployeeHistory.setStatus(true);
         employeeHistoryService.createNewRecordInEmployeeHistory(newEmployeeHistory);
+    }
+
+    public void createEmployeeHistoryForDisabledEmployee(long id, long editorId) {
+        Optional<Employee> employeeObj = this.employeeService.getEmployeeById(id);
+        if (employeeObj.isPresent()){
+            Employee employee = employeeObj.get();
+
+
+
+            EmployeeHistory newEmployeeHistory = new EmployeeHistory();
+            newEmployeeHistory.setEmpId(employee.getId());
+            newEmployeeHistory.setName(employee.getName());
+            newEmployeeHistory.setLeadId(employee.getLeadId());
+            newEmployeeHistory.setClientCounterpartId(employee.getClientCounterpartId());
+            newEmployeeHistory.setOrganizationId(employee.getOrganizationId());
+            newEmployeeHistory.setProjectId(employee.getProjectId());
+
+            Date date = new Date();
+            newEmployeeHistory.setFromDate(date);
+
+            newEmployeeHistory.setEditorId(editorId);
+
+            newEmployeeHistory.setStatus(true);
+
+            Optional<EmployeeHistory> previousActiveHistoryObj = employeeHistoryService.getLastActiveRecordByEmpId(id);
+            EmployeeHistory previousActiveHistory = previousActiveHistoryObj.get();
+            previousActiveHistory.setStatus(false);
+            previousActiveHistory.setToDate(date);
+
+            employeeHistoryService.createNewRecordInEmployeeHistory(newEmployeeHistory);
+        }
+        else {
+            log.info("This employee with ID: " + id + " is not present");
+        }
     }
 }

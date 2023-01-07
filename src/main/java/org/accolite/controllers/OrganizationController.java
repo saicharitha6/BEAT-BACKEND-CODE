@@ -1,11 +1,13 @@
 package org.accolite.controllers;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.accolite.buisnesslogic.OrganizationComponent;
 import org.accolite.db.entities.Organization;
 import org.accolite.db.services.OrganizationService;
 import org.accolite.pojo.OrganizationCard;
 import org.accolite.pojo.OrganizationUpdateDetails;
+import org.accolite.pojo.SlabDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -16,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@Slf4j
 @RequestMapping(value = PathConstants.organizationPath)
 public class OrganizationController {
     @Autowired
@@ -68,5 +71,12 @@ public class OrganizationController {
         List<OrganizationCard> orgCardList = this.organizationComponent.getOrganizationCardsByName(name);
         if(orgCardList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         else return ResponseEntity.ok().body(orgCardList);
+    }
+
+    @GetMapping(value = PathConstants.getSlabDetailsByIdPath, produces = MediaType.APPLICATION_JSON_VALUE)
+    private ResponseEntity<List<SlabDetails>> getSlabDetails(@PathVariable long id) {
+        List<SlabDetails> slabDetailsList = this.organizationComponent.getSlabDetailsList(id);
+        if (slabDetailsList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        else return ResponseEntity.ok().body(slabDetailsList);
     }
 }
