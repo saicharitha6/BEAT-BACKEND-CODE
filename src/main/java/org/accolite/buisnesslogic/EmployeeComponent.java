@@ -141,8 +141,6 @@ public class EmployeeComponent {
         if (employeeObj.isPresent()){
             Employee employee = employeeObj.get();
 
-
-
             EmployeeHistory newEmployeeHistory = new EmployeeHistory();
             newEmployeeHistory.setEmpId(employee.getId());
             newEmployeeHistory.setName(employee.getName());
@@ -159,9 +157,15 @@ public class EmployeeComponent {
             newEmployeeHistory.setStatus(true);
 
             Optional<EmployeeHistory> previousActiveHistoryObj = employeeHistoryService.getLastActiveRecordByEmpId(id);
-            EmployeeHistory previousActiveHistory = previousActiveHistoryObj.get();
-            previousActiveHistory.setStatus(false);
-            previousActiveHistory.setToDate(date);
+            if (previousActiveHistoryObj.isPresent())  {
+                EmployeeHistory previousActiveHistory = previousActiveHistoryObj.get();
+                previousActiveHistory.setStatus(false);
+                previousActiveHistory.setToDate(date);
+            }
+            else {
+                log.info("This employee with ID: " + id + " has no previous history");
+            }
+
 
             employeeHistoryService.createNewRecordInEmployeeHistory(newEmployeeHistory);
         }

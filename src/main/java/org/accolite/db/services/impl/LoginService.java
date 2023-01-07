@@ -1,7 +1,6 @@
 package org.accolite.db.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
-import org.accolite.db.entities.ClientCounterpart;
 import org.accolite.db.entities.Login;
 import org.accolite.db.repo.LoginRepository;
 import org.springframework.beans.factory.annotation.Autowired;

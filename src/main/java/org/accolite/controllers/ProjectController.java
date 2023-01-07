@@ -39,7 +39,7 @@ public class ProjectController {
     private ResponseEntity<List<Project>> getProject(){
         List<Project> prjList = this.projectService.getProject();
         if (prjList.size()==0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
-        else return ResponseEntity.ok().body(this.projectService.getProject());
+        else return ResponseEntity.ok().body(prjList);
     }
 
     @PutMapping(value = PathConstants.disablePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)

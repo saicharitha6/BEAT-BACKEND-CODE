@@ -48,7 +48,6 @@ public class LoginController {
                 loginResponse.setAccessId(access.access);
                 editorId =  sessionDetails.getEmpId();
                 return  ResponseEntity.ok().body(loginResponse);
-//                return ResponseEntity.ok().body("User logged in = "+((SessionDetails) session.getAttribute("sessionDetailsInSession")).toString());
             }
             else {
                 log.debug("Access is unable to set for this session");
