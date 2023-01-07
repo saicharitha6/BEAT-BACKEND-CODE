@@ -25,4 +25,5 @@ public final class PathConstants  {
     public static final String searchPath = "/search/{name}";
     public static final String getHistoryByIdPath = "/history/{id}";
     public static final String getEmployeesInProjectByIdPath = "/employees/{id}";
+    public static final String getSlabDetailsByIdPath = "/slabDetails/{id}";
 }

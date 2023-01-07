@@ -1,5 +1,7 @@
 package org.accolite.controllers;
 
+import jakarta.servlet.http.HttpSession;
+import lombok.extern.slf4j.Slf4j;
 import org.accolite.buisnesslogic.EmployeeComponent;
 import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.EmployeeHistory;
@@ -7,6 +9,7 @@ import org.accolite.db.services.EmployeeService;
 import org.accolite.pojo.EmployeeCard;
 import org.accolite.pojo.EmployeeUpdateDetails;
 import org.accolite.pojo.ProfileDetails;
+import org.accolite.pojo.SessionDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,6 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@Slf4j
 @CrossOrigin(origins = "http://localhost:4200/profile")
 @RequestMapping(value = PathConstants.employeePath)
 public class EmployeeController {
@@ -26,10 +30,12 @@ public class EmployeeController {
     private EmployeeComponent employeeComponent;
 
     @PostMapping(value = PathConstants.createPath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    private ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
+    private ResponseEntity<Employee> createEmployee(@RequestBody Employee employee, HttpSession session) {
+        SessionDetails sessionDetails = (SessionDetails) session.getAttribute("sessionDetailsInSession");
+        long editorId = sessionDetails.getEmpId();
         Employee employeeCreated = this.employeeService.createEmployee(employee);
-        this.employeeComponent.createEmployeeHistoryForNewEmployee(employeeCreated);
-        return ResponseEntity.ok().body(this.employeeService.createEmployee(employee));
+        this.employeeComponent.createEmployeeHistoryForNewEmployee(employeeCreated, editorId);
+        return ResponseEntity.ok().body(employeeCreated);
     }
 
     @PutMapping(value = PathConstants.updatePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
@@ -47,9 +53,14 @@ public class EmployeeController {
     }
 
     @PutMapping(value = PathConstants.disablePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
-    private ResponseEntity<String> disableEmployee(@PathVariable long id) {
+    private ResponseEntity<String> disableEmployee(@PathVariable long id, HttpSession session) {
+        SessionDetails sessionDetails = (SessionDetails) session.getAttribute("sessionDetailsInSession");
+        long editorId = sessionDetails.getEmpId();
         boolean empDisabled = this.employeeService.disableEmployee(id);
-        if (empDisabled) return ResponseEntity.ok().body("Employee disabled");
+        if (empDisabled) {
+            this.employeeComponent.createEmployeeHistoryForDisabledEmployee(id, editorId);
+            return ResponseEntity.ok().body("Employee disabled");
+        }
         else return ResponseEntity.notFound().build();
     }
 

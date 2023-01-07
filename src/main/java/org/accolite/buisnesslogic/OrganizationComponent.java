@@ -2,9 +2,13 @@ package org.accolite.buisnesslogic;
 
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Organization;
+import org.accolite.db.entities.SlabCharges;
 import org.accolite.db.services.OrganizationService;
+import org.accolite.db.services.impl.ExpSlabsService;
+import org.accolite.db.services.impl.SlabChargesService;
 import org.accolite.pojo.OrganizationCard;
 import org.accolite.pojo.OrganizationUpdateDetails;
+import org.accolite.pojo.SlabDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,6 +21,12 @@ import java.util.Optional;
 public class OrganizationComponent {
     @Autowired
     OrganizationService organizationService;
+
+    @Autowired
+    SlabChargesService slabChargesService;
+
+    @Autowired
+    ExpSlabsService expSlabsService;
 
     public boolean updateOrganization(OrganizationUpdateDetails organizationUpdateDetailsFromClient) {
         Optional<Organization> organizationFromDbObj = organizationService.getOrganizationById(organizationUpdateDetailsFromClient.getId());
@@ -84,5 +94,22 @@ public class OrganizationComponent {
             organizationCardList.add(this.organizationService.cloneToOrganizationCard(curOrganizationCard, curOrganization));
         }
         return organizationCardList;
+    }
+
+    public List<SlabDetails> getSlabDetailsList(long id) {
+        List<SlabDetails> slabDetailsList = new ArrayList<>();
+
+        List<SlabCharges> slabChargesList = this.slabChargesService.getSlabChargesListByOrgId(id);
+        for (int i = 0; i < slabChargesList.size(); i++) {
+            SlabCharges curSlabCharge = slabChargesList.get(i);
+            long slabId = curSlabCharge.getSlabId();
+            String slab = this.expSlabsService.getSlabById(slabId);
+            long cost = curSlabCharge.getCost();
+            SlabDetails curSlabDetails = new SlabDetails();
+            curSlabDetails.setSlab(slab);
+            curSlabDetails.setCost(cost);
+            slabDetailsList.add(curSlabDetails);
+        }
+        return slabDetailsList;
     }
 }
