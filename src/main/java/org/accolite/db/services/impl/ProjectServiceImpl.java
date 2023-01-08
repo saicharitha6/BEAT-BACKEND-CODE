@@ -9,6 +9,7 @@ import org.accolite.pojo.ProjectUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -44,10 +45,12 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public boolean disableProject(long id) {
         Optional<Project> prjObj = this.projectRepository.findById(id);
-
+        Date date = new Date();
         if (prjObj.isPresent()) {
             Project projectUpdate = prjObj.get();
+
             projectUpdate.setStatus(false);
+            projectUpdate.setEndDate(date);
 
             projectRepository.save(projectUpdate);
             return true;
