@@ -45,7 +45,7 @@ public class OrganizationController {
         else return ResponseEntity.ok().body(orgList);
     }
 
-    @PutMapping(value = PathConstants.disablePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
+    @GetMapping(value = PathConstants.disablePath, produces = MediaType.TEXT_PLAIN_VALUE)
     private ResponseEntity<String> disableOrganization(@PathVariable long id){
         boolean orgDisabled = this.organizationService.disableOrganization(id);
         if (orgDisabled) return ResponseEntity.ok().body("Organization disabled");

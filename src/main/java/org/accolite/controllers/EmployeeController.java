@@ -52,7 +52,7 @@ public class EmployeeController {
         else return ResponseEntity.ok().body(empList);
     }
 
-    @PutMapping(value = PathConstants.disablePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
+    @GetMapping(value = PathConstants.disablePath, produces = MediaType.TEXT_PLAIN_VALUE)
     private ResponseEntity<String> disableEmployee(@PathVariable long id, HttpSession session) {
         SessionDetails sessionDetails = (SessionDetails) session.getAttribute("sessionDetailsInSession");
         long editorId = sessionDetails.getEmpId();
