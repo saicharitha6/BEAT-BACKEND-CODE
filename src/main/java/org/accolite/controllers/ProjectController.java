@@ -42,7 +42,7 @@ public class ProjectController {
         else return ResponseEntity.ok().body(prjList);
     }
 
-    @PutMapping(value = PathConstants.disablePath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = PathConstants.disablePath, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<String> disableProject(@PathVariable long id){
         boolean prjDisabled = this.projectService.disableProject(id);
         if (prjDisabled) return ResponseEntity.ok().body("Project disabled");
