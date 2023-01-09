@@ -118,7 +118,7 @@ public class EmployeeComponent {
         return employeeHistoryList;
     }
 
-    public void createEmployeeHistoryForNewEmployee(Employee employee, long editorId) {
+    public void createEmployeeHistoryForNewEmployee(Employee employee) {
         EmployeeHistory newEmployeeHistory = new EmployeeHistory();
         newEmployeeHistory.setEmpId(employee.getId());
         newEmployeeHistory.setName(employee.getName());
@@ -130,13 +130,11 @@ public class EmployeeComponent {
         Date date = new Date();
         newEmployeeHistory.setFromDate(date);
 
-        newEmployeeHistory.setEditorId(editorId);
-
         newEmployeeHistory.setStatus(true);
         employeeHistoryService.createNewRecordInEmployeeHistory(newEmployeeHistory);
     }
 
-    public void createEmployeeHistoryForDisabledEmployee(long id, long editorId) {
+    public void createEmployeeHistoryForDisabledEmployee(long id) {
         Optional<Employee> employeeObj = this.employeeService.getEmployeeById(id);
         if (employeeObj.isPresent()){
             Employee employee = employeeObj.get();
@@ -151,8 +149,6 @@ public class EmployeeComponent {
 
             Date date = new Date();
             newEmployeeHistory.setFromDate(date);
-
-            newEmployeeHistory.setEditorId(editorId);
 
             newEmployeeHistory.setStatus(true);
 
