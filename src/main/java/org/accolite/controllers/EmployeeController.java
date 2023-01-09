@@ -31,10 +31,8 @@ public class EmployeeController {
 
     @PostMapping(value = PathConstants.createPath, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     private ResponseEntity<Employee> createEmployee(@RequestBody Employee employee, HttpSession session) {
-        SessionDetails sessionDetails = (SessionDetails) session.getAttribute("sessionDetailsInSession");
-        long editorId = sessionDetails.getEmpId();
         Employee employeeCreated = this.employeeService.createEmployee(employee);
-        this.employeeComponent.createEmployeeHistoryForNewEmployee(employeeCreated, editorId);
+        this.employeeComponent.createEmployeeHistoryForNewEmployee(employeeCreated);
         return ResponseEntity.ok().body(employeeCreated);
     }
 
@@ -54,11 +52,9 @@ public class EmployeeController {
 
     @GetMapping(value = PathConstants.disablePath, produces = MediaType.TEXT_PLAIN_VALUE)
     private ResponseEntity<String> disableEmployee(@PathVariable long id, HttpSession session) {
-        SessionDetails sessionDetails = (SessionDetails) session.getAttribute("sessionDetailsInSession");
-        long editorId = sessionDetails.getEmpId();
         boolean empDisabled = this.employeeService.disableEmployee(id);
         if (empDisabled) {
-            this.employeeComponent.createEmployeeHistoryForDisabledEmployee(id, editorId);
+            this.employeeComponent.createEmployeeHistoryForDisabledEmployee(id);
             return ResponseEntity.ok().body("Employee disabled");
         }
         else return ResponseEntity.notFound().build();
