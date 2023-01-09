@@ -188,6 +188,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         String email = this.loginService.getEmail(employee.getId());
         profileDetails.setEmail(email);
 
+        profileDetails.setProjectId(employee.getProjectId());
+        profileDetails.setLeadId(employee.getLeadId());
+        profileDetails.setClientCounterpartId(employee.getClientCounterpartId());
+        profileDetails.setOrganizationId(employee.getOrganizationId());
+        profileDetails.setBand(employee.getBand());
+
         return profileDetails;
     }
 
