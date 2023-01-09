@@ -18,5 +18,12 @@ public class ProfileDetails {
     private String organizationIdName;
     private String clientCounterpartIdName;
     private String bandName;
+
+    private long projectId;
+    private long leadId;
+    private long organizationId;
+    private long clientCounterpartId;
+    private long band;
+
     private String email;
 }
