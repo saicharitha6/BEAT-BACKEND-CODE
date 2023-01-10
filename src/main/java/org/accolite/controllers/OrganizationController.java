@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.accolite.buisnesslogic.OrganizationComponent;
 import org.accolite.db.entities.Organization;
 import org.accolite.db.services.OrganizationService;
+import org.accolite.pojo.OrgView;
 import org.accolite.pojo.OrganizationCard;
 import org.accolite.pojo.OrganizationUpdateDetails;
 import org.accolite.pojo.SlabDetails;
@@ -53,9 +54,11 @@ public class OrganizationController {
     }
 
     @GetMapping(value = PathConstants.getByIdPath, produces = MediaType.APPLICATION_JSON_VALUE)
-    private ResponseEntity<Organization> getOrganizationById(@PathVariable long id){
+    private ResponseEntity<OrgView> getOrganizationById(@PathVariable long id){
         Optional<Organization> organizationFromDbObj = organizationService.getOrganizationById(id);
-        if (organizationFromDbObj.isPresent()) return ResponseEntity.ok().body(organizationFromDbObj.get());
+        OrgView orgView = new OrgView();
+        orgView = this.organizationService.cloneToOrgView(orgView, organizationFromDbObj.get());
+        if (organizationFromDbObj.isPresent()) return ResponseEntity.ok().body(orgView);
         else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 

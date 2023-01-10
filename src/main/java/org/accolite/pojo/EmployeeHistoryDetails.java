@@ -26,4 +26,5 @@ public class EmployeeHistoryDetails {
     private String projectIdName;
     private String clientCounterpartIdName;
     private String organizationIdName;
+    private String leadIdName;
 }
