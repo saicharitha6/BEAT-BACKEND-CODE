@@ -6,6 +6,7 @@ import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.services.impl.EmployeeHistoryService;
 import org.accolite.db.services.EmployeeService;
 import org.accolite.pojo.EmployeeCard;
+import org.accolite.pojo.EmployeeHistoryDetails;
 import org.accolite.pojo.EmployeeUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -113,8 +114,8 @@ public class EmployeeComponent {
         return employeeCardList;
     }
 
-    public List<EmployeeHistory> getEmployeeHistoryById(long id) {
-        List<EmployeeHistory> employeeHistoryList = this.employeeHistoryService.getEmployeeHistoryRecords(id);
+    public List<EmployeeHistoryDetails> getEmployeeHistoryById(long id) {
+        List<EmployeeHistoryDetails> employeeHistoryList = this.employeeHistoryService.getEmployeeHistoryRecords(id);
         return employeeHistoryList;
     }
 

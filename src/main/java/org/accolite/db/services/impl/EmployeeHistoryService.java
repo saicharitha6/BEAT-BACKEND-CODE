@@ -3,12 +3,18 @@ package org.accolite.db.services.impl;
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.repo.EmployeeHistoryRepository;
+import org.accolite.db.services.OrganizationService;
+import org.accolite.db.services.ProjectService;
+import org.accolite.pojo.EmployeeHistoryDetails;
 import org.accolite.pojo.EmployeeUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import static java.lang.String.valueOf;
 
 @Service
 @Slf4j
@@ -16,6 +22,15 @@ public class EmployeeHistoryService {
 
     @Autowired
     EmployeeHistoryRepository employeeHistoryRepository;
+
+    @Autowired
+    ProjectService projectService;
+
+    @Autowired
+    ClientCounterpartService clientCounterpartService;
+
+    @Autowired
+    OrganizationService organizationService;
 
     public void createNewRecordInEmployeeHistory(EmployeeHistory employeeHistory){
         employeeHistoryRepository.save(employeeHistory);
@@ -55,8 +70,52 @@ public class EmployeeHistoryService {
         return employeeHistoryUpdateObj;
     }
 
-    public List<EmployeeHistory> getEmployeeHistoryRecords(long id) {
+    public List<EmployeeHistoryDetails> getEmployeeHistoryRecords(long id) {
         List<EmployeeHistory> employeeHistoryList = employeeHistoryRepository.findAllByEmpId(id);
-        return employeeHistoryList;
+        List<EmployeeHistoryDetails> employeeHistoryDetailsList = new ArrayList<>();
+        for (int i = 0; i < employeeHistoryList.size(); i++) {
+            EmployeeHistory curEmpHis = employeeHistoryList.get(i);
+            EmployeeHistoryDetails curEmpHisDet = new EmployeeHistoryDetails();
+            employeeHistoryDetailsList.add(cloneToEmployeeHistoryDetails(curEmpHisDet, curEmpHis));
+        }
+        return employeeHistoryDetailsList;
+    }
+
+    public EmployeeHistoryDetails cloneToEmployeeHistoryDetails(EmployeeHistoryDetails curEmpHisDet, EmployeeHistory curEmpHis) {
+
+        curEmpHisDet.setId(curEmpHis.getId());
+        curEmpHisDet.setEmpId(curEmpHis.getEmpId());
+        curEmpHisDet.setName(curEmpHis.getName());
+        curEmpHisDet.setLeadId(curEmpHis.getLeadId());
+        curEmpHisDet.setProjectId(curEmpHis.getProjectId());
+        curEmpHisDet.setClientCounterpartId(curEmpHis.getClientCounterpartId());
+        curEmpHisDet.setOrganizationId(curEmpHis.getOrganizationId());
+        curEmpHisDet.setFromDate(curEmpHis.getFromDate());
+        curEmpHisDet.setToDate(curEmpHis.getToDate());
+        curEmpHisDet.setEditorId(curEmpHis.getEditorId());
+        curEmpHisDet.setProjectId(curEmpHis.getProjectId());
+        curEmpHisDet.setDateOfJoiningProject(curEmpHis.getDateOfJoiningProject());
+        curEmpHisDet.setDateOfLeavingProject(curEmpHis.getDateOfLeavingProject());
+        curEmpHisDet.setStatus(curEmpHis.isStatus());
+
+        curEmpHisDet.setEditorIdName("");
+
+        String projectName = this.projectService.getProjectName(curEmpHis.getProjectId());
+        String projectId = valueOf(curEmpHis.getProjectId());
+        String projectIdName = projectName + " " + projectId;
+        curEmpHisDet.setProjectIdName(projectIdName);
+
+        String clientCounterpartName = this.clientCounterpartService.getClientCounterpartName(curEmpHis.getClientCounterpartId());
+        String clientCounterpartId = valueOf(curEmpHis.getClientCounterpartId());
+        String clientCounterpartIdName = clientCounterpartName + " " + clientCounterpartId;
+        curEmpHisDet.setClientCounterpartIdName(clientCounterpartIdName);
+
+        String organizationName = this.organizationService.getOrganizationName(curEmpHis.getOrganizationId());
+        String organizationId = valueOf(curEmpHis.getOrganizationId());
+        String organizationIdName = organizationName + " " + organizationId;
+        curEmpHisDet.setOrganizationIdName(organizationIdName);
+
+
+        return curEmpHisDet;
     }
 }
