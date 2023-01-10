@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.Organization;
 import org.accolite.db.repo.OrganizationRepository;
 import org.accolite.db.services.OrganizationService;
+import org.accolite.pojo.OrgView;
 import org.accolite.pojo.OrganizationCard;
 import org.accolite.pojo.OrganizationUpdateDetails;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+
+import static java.lang.String.valueOf;
 
 @Slf4j
 @Service
@@ -131,5 +134,34 @@ public class OrganizationServiceImpl implements OrganizationService {
         curOrganizationCard.setLocation(curOrganization.getLocation());
         curOrganizationCard.setOwner(curOrganization.getOwner());
         return curOrganizationCard;
+    }
+
+    @Override
+    public OrgView cloneToOrgView(OrgView curOrgView, Organization curOrganization) {
+        curOrgView.setId(curOrganization.getId());
+        curOrgView.setOrgName(curOrganization.getOrgName());
+        curOrgView.setLocation(curOrganization.getLocation());
+        curOrgView.setOwner(curOrganization.getOwner());
+        curOrgView.setOwnerEmpId(curOrganization.getOwnerEmpId());
+        curOrgView.setParentOrg(curOrganization.getParentOrg());
+        curOrgView.setStatus(curOrganization.isStatus());
+
+        String parentOrgName = getOrgName(curOrganization.getParentOrg());
+        String parentOrgId = valueOf(curOrganization.getParentOrg());
+        String parentOrgIdName = parentOrgName + " " + parentOrgId;
+        curOrgView.setParentOrgIdName(parentOrgIdName);
+        return curOrgView;
+    }
+
+    public String getOrgName(long id) {
+        Optional<Organization> organizationObj = this.organizationRepository.findById(id);
+        if (organizationObj.isPresent()) {
+            Organization organization = organizationObj.get();
+            return organization.getOrgName();
+        }
+        else {
+            log.info("Parent organization not found");
+            return "";
+        }
     }
 }

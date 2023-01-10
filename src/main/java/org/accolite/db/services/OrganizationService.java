@@ -1,6 +1,7 @@
 package org.accolite.db.services;
 
 import org.accolite.db.entities.Organization;
+import org.accolite.pojo.OrgView;
 import org.accolite.pojo.OrganizationCard;
 import org.accolite.pojo.OrganizationUpdateDetails;
 import org.springframework.stereotype.Service;
@@ -21,4 +22,5 @@ public interface OrganizationService {
     OrganizationCard getParentCard(long parentOrg);
     OrganizationCard cloneToOrganizationCard(OrganizationCard curOrganizationCard, Organization curOrganization);
     List<Organization> getOrganizationsByName(String name);
+    OrgView cloneToOrgView(OrgView orgView, Organization organization);
 }

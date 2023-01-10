@@ -3,6 +3,7 @@ package org.accolite.db.services.impl;
 import lombok.extern.slf4j.Slf4j;
 import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.repo.EmployeeHistoryRepository;
+import org.accolite.db.services.EmployeeService;
 import org.accolite.db.services.OrganizationService;
 import org.accolite.db.services.ProjectService;
 import org.accolite.pojo.EmployeeHistoryDetails;
@@ -31,6 +32,9 @@ public class EmployeeHistoryService {
 
     @Autowired
     OrganizationService organizationService;
+
+    @Autowired
+    EmployeeService employeeService;
 
     public void createNewRecordInEmployeeHistory(EmployeeHistory employeeHistory){
         employeeHistoryRepository.save(employeeHistory);
@@ -115,6 +119,10 @@ public class EmployeeHistoryService {
         String organizationIdName = organizationName + " " + organizationId;
         curEmpHisDet.setOrganizationIdName(organizationIdName);
 
+        String leadName = this.employeeService.getLeadName(curEmpHis.getLeadId());
+        String leadId = valueOf(curEmpHis.getLeadId());
+        String leadIdName = leadName + " " + leadId;
+        curEmpHisDet.setLeadIdName(leadIdName);
 
         return curEmpHisDet;
     }
