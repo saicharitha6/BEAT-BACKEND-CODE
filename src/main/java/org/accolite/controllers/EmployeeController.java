@@ -6,10 +6,7 @@ import org.accolite.buisnesslogic.EmployeeComponent;
 import org.accolite.db.entities.Employee;
 import org.accolite.db.entities.EmployeeHistory;
 import org.accolite.db.services.EmployeeService;
-import org.accolite.pojo.EmployeeCard;
-import org.accolite.pojo.EmployeeUpdateDetails;
-import org.accolite.pojo.ProfileDetails;
-import org.accolite.pojo.SessionDetails;
+import org.accolite.pojo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -87,8 +84,8 @@ public class EmployeeController {
     }
 
     @GetMapping(value = PathConstants.getHistoryByIdPath, produces = MediaType.APPLICATION_JSON_VALUE)
-    private ResponseEntity<List<EmployeeHistory>> getEmployeeHistoryById(@PathVariable long id){
-        List<EmployeeHistory> empHisList = this.employeeComponent.getEmployeeHistoryById(id);
+    private ResponseEntity<List<EmployeeHistoryDetails>> getEmployeeHistoryById(@PathVariable long id){
+        List<EmployeeHistoryDetails> empHisList = this.employeeComponent.getEmployeeHistoryById(id);
         if(empHisList.size() == 0) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         else return ResponseEntity.ok().body(empHisList);
     }
