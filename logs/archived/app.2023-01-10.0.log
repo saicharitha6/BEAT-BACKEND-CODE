@@ -1,0 +1,183 @@
+2023-01-10 09:45:40,096 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 4312 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-10 09:45:40,106 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-10 09:45:40,107 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-10 09:45:49,403 INFO org.accolite.BeatApplication [main] Started BeatApplication in 9.884 seconds (process running for 10.574)
+2023-01-10 09:45:49,408 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-10 09:46:46,264 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-5] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzI0MjA2LCJleHAiOjE2NzMzNjAyMDZ9.gR-AP4leWXd37FfjTA0-fCmBn4zrxFeceK2PKUtOXpM)
+2023-01-10 09:46:46,310 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-10 09:47:30,500 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-10] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzI0MjUwLCJleHAiOjE2NzMzNjAyNTB9.FKlATgg2yZOdmSfwSEFXzFge5vhEZD2Ct9YtsE7P3zc)
+2023-01-10 09:47:30,529 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 10:14:25,511 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-10] This employee is not related to any project
+2023-01-10 10:14:25,515 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 10:14:25,517 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 10:14:25,521 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-10] This employee is not related to any Client counterpart
+2023-01-10 10:14:25,525 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-10 10:14:32,048 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-10 10:22:19,421 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 16848 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-10 10:22:19,423 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-10 10:22:19,425 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-10 10:22:24,997 INFO org.accolite.BeatApplication [main] Started BeatApplication in 6.1 seconds (process running for 6.673)
+2023-01-10 10:22:25,002 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-10 10:23:50,741 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-8] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzI2NDMwLCJleHAiOjE2NzMzNjI0MzB9.o3VMSuxkWVuDICv0NgEk2gaXuzFxBLGXsYMjjJC6Omo)
+2023-01-10 10:23:50,788 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 10:24:11,294 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-10] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzI2NDUxLCJleHAiOjE2NzMzNjI0NTF9.nvChNkCeOkRmVYGaZwI4Obh32f6Ff5xHBzqgh5gPPeQ)
+2023-01-10 10:24:11,320 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-10 10:29:45,905 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-10 10:29:46,797 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 10:29:51,260 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 11:04:57,169 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-1] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMzI4ODk3LCJleHAiOjE2NzMzNjQ4OTd9.x5YYo8scK1WyPkvoC3XOXiB8VPBPZluDJGcyk-IqmUs)
+2023-01-10 11:04:57,196 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 11:32:51,841 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-8] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMzMwNTcxLCJleHAiOjE2NzMzNjY1NzF9.hH5ZB1H009m07DHILN2lFDOdiR9x_lQp8maam33_O4o)
+2023-01-10 11:32:51,882 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 11:36:37,264 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 11:53:02,044 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 11:53:15,150 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-10 11:53:19,121 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-10 12:25:47,925 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 12:26:10,757 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 12:27:03,360 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 12:27:27,856 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-10 12:28:05,980 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 12:29:38,655 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 12:30:02,050 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 12:30:11,002 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-10 12:30:38,187 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 12:31:11,205 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 12:31:13,241 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 12:31:27,131 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-10 12:31:31,251 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-10 12:31:41,952 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 12:31:43,616 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 12:31:59,791 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-10 12:32:06,525 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-10 12:32:08,524 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-10 12:32:45,703 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-10 12:32:54,910 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 12:32:59,709 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 12:33:00,815 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 12:37:48,803 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 12:37:52,577 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 12:40:11,951 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 12:49:53,914 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzM1MTkzLCJleHAiOjE2NzMzNzExOTN9.GtTE-37Pb56JlmxhCwSug3FEqeFDoI1paV-w5BiZgr0)
+2023-01-10 12:49:53,975 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-10 12:50:06,879 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-10 12:51:07,160 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 12:57:46,958 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 13:02:42,889 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 13:06:15,853 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 13:25:00,363 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 13:25:44,681 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-10 13:25:49,472 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 13:26:11,641 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-10 13:26:15,173 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 13:26:35,879 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 13:26:37,989 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 13:26:47,364 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-10 14:43:12,036 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-2] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzQxOTkyLCJleHAiOjE2NzMzNzc5OTJ9.lcJJO63FYXSDsxHr2hur_WnbZGBLP0GrG94oeAwkD4c)
+2023-01-10 14:43:12,069 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-10 14:43:14,900 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-1] This employee is not related to any project
+2023-01-10 14:43:14,904 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-10 14:43:14,904 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-10 14:43:14,906 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-10 14:43:14,909 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-10 14:43:18,230 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 14:43:25,302 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-10 15:16:53,244 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 20052 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-10 15:16:53,247 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-10 15:16:53,249 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-10 15:16:59,121 INFO org.accolite.BeatApplication [main] Started BeatApplication in 6.514 seconds (process running for 7.156)
+2023-01-10 15:16:59,124 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-10 15:50:18,345 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzQ2MDE4LCJleHAiOjE2NzMzODIwMTh9.MxWNYRfgHrVSyVm5AdktfqVEg0pU21D9bEKRMbCi1WM)
+2023-01-10 15:50:18,390 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 15:50:38,522 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-4] This employee is not related to any project
+2023-01-10 15:50:38,533 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-10 15:50:38,534 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-10 15:50:38,540 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-4] This employee is not related to any Client counterpart
+2023-01-10 15:50:38,544 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-10 15:50:41,557 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 15:50:50,483 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-10 15:51:08,615 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-1] employee with empid :8 added terminated date
+2023-01-10 15:51:08,696 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-1] This employee with ID: 8 has no previous history
+2023-01-10 15:51:09,754 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-3] employee with empid :8 added terminated date
+2023-01-10 15:51:10,555 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-4] employee with empid :8 added terminated date
+2023-01-10 15:51:11,234 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-5] employee with empid :8 added terminated date
+2023-01-10 15:51:11,911 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-6] employee with empid :8 added terminated date
+2023-01-10 15:51:12,467 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-7] employee with empid :8 added terminated date
+2023-01-10 15:51:12,954 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-9] employee with empid :8 added terminated date
+2023-01-10 15:51:13,291 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-8] employee with empid :8 added terminated date
+2023-01-10 15:51:13,522 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-10] employee with empid :8 added terminated date
+2023-01-10 15:51:23,665 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-2] employee with empid :8 added terminated date
+2023-01-10 15:51:27,829 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-1] employee with empid :8 added terminated date
+2023-01-10 15:51:30,060 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-10 15:52:19,718 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-6] This employee is not related to any project
+2023-01-10 15:52:19,722 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 15:52:19,731 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-6] This employee is not related to any Login
+2023-01-10 15:52:22,682 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-9] employee with empid :10 added terminated date
+2023-01-10 15:52:22,693 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-9] This employee with ID: 10 has no previous history
+2023-01-10 15:52:24,283 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-8] employee with empid :10 added terminated date
+2023-01-10 15:52:25,090 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-10] employee with empid :10 added terminated date
+2023-01-10 15:52:25,829 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-2] employee with empid :10 added terminated date
+2023-01-10 15:52:26,391 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-1] employee with empid :10 added terminated date
+2023-01-10 15:52:32,105 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-10 15:52:33,388 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-5] This employee is not related to any project
+2023-01-10 15:52:33,393 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 15:52:33,394 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-10 15:52:33,396 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-5] This employee is not related to any Client counterpart
+2023-01-10 15:52:33,398 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-10 15:52:35,750 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-6] employee with empid :1 added terminated date
+2023-01-10 15:52:37,089 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-9] employee with empid :1 added terminated date
+2023-01-10 15:52:37,907 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-8] employee with empid :1 added terminated date
+2023-01-10 15:52:38,755 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-10] employee with empid :1 added terminated date
+2023-01-10 15:52:38,951 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-2] employee with empid :1 added terminated date
+2023-01-10 15:52:39,146 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-1] employee with empid :1 added terminated date
+2023-01-10 15:52:39,376 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-3] employee with empid :1 added terminated date
+2023-01-10 15:52:39,988 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-4] employee with empid :1 added terminated date
+2023-01-10 15:52:59,871 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 15:53:02,191 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-6] employee with empid :5 added terminated date
+2023-01-10 15:53:02,202 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-6] This employee with ID: 5 has no previous history
+2023-01-10 15:53:03,216 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-9] employee with empid :5 added terminated date
+2023-01-10 15:53:03,754 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-8] employee with empid :5 added terminated date
+2023-01-10 15:53:04,104 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-10] employee with empid :5 added terminated date
+2023-01-10 15:53:04,364 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-2] employee with empid :5 added terminated date
+2023-01-10 15:53:04,588 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-1] employee with empid :5 added terminated date
+2023-01-10 15:53:07,794 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-10 15:57:12,007 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-10 15:57:16,316 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-10 15:58:59,173 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 17448 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-10 15:58:59,177 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-10 15:58:59,179 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-10 15:59:05,268 INFO org.accolite.BeatApplication [main] Started BeatApplication in 6.754 seconds (process running for 7.433)
+2023-01-10 15:59:05,272 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-10 15:59:22,004 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-10 15:59:53,843 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-10 16:00:02,608 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-10 16:00:03,548 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-4] This employee is not related to any Login
+2023-01-10 16:00:08,891 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-6] employee with empid :10 added terminated date
+2023-01-10 16:00:09,000 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-6] This employee with ID: 10 has no previous history
+2023-01-10 16:00:11,424 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-7] This employee is not related to any Login
+2023-01-10 16:03:14,541 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-10 16:03:18,086 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-3] employee with empid :8 added terminated date
+2023-01-10 16:03:18,135 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-3] This employee with ID: 8 has no previous history
+2023-01-10 16:03:20,171 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-4] employee with empid :8 added terminated date
+2023-01-10 16:03:22,644 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-10 16:15:30,770 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-10 16:35:08,610 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-7] User logged in = SessionDetails(empId=1, userName=mukil, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzQ4NzA4LCJleHAiOjE2NzMzODQ3MDh9.J199vp0T-q3h5Khw9l_0eUPfk2yzR5a8Q3wFTPO9uWc)
+2023-01-10 16:36:41,045 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-1] User logged in = SessionDetails(empId=1, userName=mukil, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzQ4ODAxLCJleHAiOjE2NzMzODQ4MDF9.KJLEZcBC54gOZiJoi2NjpML3c_atyrk8Ymv9DcaTi2U)
+2023-01-10 16:47:19,863 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-2] User logged in = SessionDetails(empId=1, userName=mukil, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzQ5NDM5LCJleHAiOjE2NzMzODU0Mzl9.bc-2vYIFNMGLOP0rAOBUoo1wJ3yoKHRWuBcjASnaBDc)
+2023-01-10 17:00:06,269 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-5] User logged in = SessionDetails(empId=1, userName=mukil, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzUwMjA2LCJleHAiOjE2NzMzODYyMDZ9.yGdnS5mpkft8AZxtMm2PQvImGfSQ8Frh925m7debQFI)
+2023-01-10 17:18:21,363 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-2] This employee is not related to any Login
+2023-01-10 17:18:23,482 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-3] This employee is not related to any Login
+2023-01-10 17:21:35,289 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-8] This employee is not related to any Login
+2023-01-10 17:22:36,264 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-3] This employee is not related to any Login
+2023-01-10 17:22:44,452 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-7] Employee with employee ID: 7 has no previous history
+2023-01-10 17:24:12,308 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-2] This employee is not related to any Login
+2023-01-10 17:28:43,903 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-7] This employee is not related to any Login
+2023-01-10 17:30:31,699 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-8] User logged in = SessionDetails(empId=1, userName=mukil, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzUyMDMxLCJleHAiOjE2NzMzODgwMzF9.O15x5NduWwnXnBExXZoyFeTtJnANSlI4zwtj64c8Low)
+2023-01-10 18:09:18,141 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 17012 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-10 18:09:18,144 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-10 18:09:18,145 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-10 18:09:24,438 INFO org.accolite.BeatApplication [main] Started BeatApplication in 6.862 seconds (process running for 7.534)
+2023-01-10 18:09:24,442 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-10 18:09:36,520 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-2] User logged in = SessionDetails(empId=1, userName=mukil, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzU0Mzc2LCJleHAiOjE2NzMzOTAzNzZ9.G8cvOThBYT_RXYIOb09VO2Vc56qdI5CYaCbJ4QKJWhY)
+2023-01-10 18:15:14,710 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-5] User logged in = SessionDetails(empId=1, userName=mukil, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMzU0NzE0LCJleHAiOjE2NzMzOTA3MTR9.SuXwTKy-DmnJgh9TCw77adbCvGc9WKUgxzS0zXg7eCU)
+2023-01-10 18:15:33,487 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
