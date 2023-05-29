@@ -18,7 +18,7 @@ import java.util.Optional;
 
 @RestController
 @Slf4j
-@CrossOrigin(origins = "http://localhost:4200/profile")
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping(value = PathConstants.employeePath)
 public class EmployeeController {
     @Autowired

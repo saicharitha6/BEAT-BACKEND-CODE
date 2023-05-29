@@ -20,6 +20,8 @@ import java.util.Optional;
 
 @RestController
 @Slf4j
+@CrossOrigin(origins = "http://localhost:4200")
+
 @RequestMapping(value = PathConstants.organizationPath)
 public class OrganizationController {
     @Autowired

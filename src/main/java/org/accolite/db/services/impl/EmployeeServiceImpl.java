@@ -74,7 +74,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (empObj.isPresent()) {
             Employee employeeUpdate = empObj.get();
             employeeUpdate.setDateOfLeaving(date);
-
+            log.debug("employee with empid :"+employeeUpdate.getId()+ " added terminated date");
             employeeRepository.save(employeeUpdate);
             return true;
         } else {

@@ -1,0 +1,946 @@
+2023-01-09 11:39:07,024 INFO org.accolite.BeatApplicationTests [Test worker] Starting BeatApplicationTests using Java 17 with PID 10096 (started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 11:39:07,032 DEBUG org.accolite.BeatApplicationTests [Test worker] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 11:39:07,035 INFO org.accolite.BeatApplicationTests [Test worker] The following 1 profile is active: "dev"
+2023-01-09 11:39:19,501 INFO org.accolite.BeatApplicationTests [Test worker] Started BeatApplicationTests in 12.907 seconds (process running for 15.263)
+2023-01-09 11:39:30,740 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 12580 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 11:39:30,776 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 11:39:30,777 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 11:39:41,800 INFO org.accolite.BeatApplication [main] Started BeatApplication in 11.702 seconds (process running for 12.35)
+2023-01-09 11:39:41,805 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 11:49:14,536 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 11700 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 11:49:14,540 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 11:49:14,542 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 11:49:20,545 INFO org.accolite.BeatApplication [main] Started BeatApplication in 6.648 seconds (process running for 7.347)
+2023-01-09 11:49:20,549 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 11:49:28,582 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-09 11:49:31,357 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-2] This employee is not related to any Client counterpart
+2023-01-09 11:49:46,611 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-4] Employee with employee ID: 5 has no previous history
+2023-01-09 11:49:50,527 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-5] This employee is not related to any project
+2023-01-09 11:49:50,542 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-09 11:49:50,547 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-5] This employee is not related to any Client counterpart
+2023-01-09 11:49:50,553 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 11:52:26,388 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-9] This employee is not related to any project
+2023-01-09 11:52:26,419 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 11:52:26,425 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-9] This employee is not related to any Client counterpart
+2023-01-09 11:52:26,430 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 11:52:31,902 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-10] This employee is not related to any project
+2023-01-09 11:52:31,913 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-09 11:52:31,916 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-10] This employee is not related to any Client counterpart
+2023-01-09 11:52:31,920 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 11:52:34,153 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-1] This employee is not related to any project
+2023-01-09 11:52:34,163 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 11:52:34,165 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-09 11:52:34,169 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 11:58:25,258 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-4] This employee is not related to any project
+2023-01-09 11:58:25,268 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 11:58:25,273 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-4] This employee is not related to any Client counterpart
+2023-01-09 11:58:25,276 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 12:23:16,057 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-6] This employee is not related to any project
+2023-01-09 12:23:16,074 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 12:23:16,079 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-6] This employee is not related to any Client counterpart
+2023-01-09 12:23:16,085 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 12:23:32,548 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-7] This employee is not related to any project
+2023-01-09 12:23:32,567 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 12:23:32,572 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-7] This employee is not related to any Client counterpart
+2023-01-09 12:23:32,579 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 12:24:30,504 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-8] This employee is not related to any project
+2023-01-09 12:24:30,520 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-09 12:24:30,527 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-8] This employee is not related to any Client counterpart
+2023-01-09 12:24:30,531 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 12:24:33,264 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-9] This employee is not related to any project
+2023-01-09 12:24:33,278 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 12:24:33,282 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-9] This employee is not related to any Client counterpart
+2023-01-09 12:24:33,286 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 12:27:48,111 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-09 12:46:04,419 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-6] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMjQ4NTY0LCJleHAiOjE2NzMyODQ1NjR9.C6fbaaZfacS-6rM5UxyBLNx2FU9lcCUT7HmZVoboFoE)
+2023-01-09 12:51:00,360 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 12:51:00,363 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-4] This employee is not related to any Login
+2023-01-09 12:51:13,075 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 12:51:49,746 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 12:51:49,748 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-8] This employee is not related to any Login
+2023-01-09 12:51:51,673 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 12:51:57,492 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 12:52:09,504 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 12:52:09,506 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-5] This employee is not related to any Login
+2023-01-09 12:52:11,868 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 12:52:22,258 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 12:52:22,260 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-9] This employee is not related to any Login
+2023-01-09 12:52:53,716 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-10] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMjQ4OTczLCJleHAiOjE2NzMyODQ5NzN9.LXDzsynWKDfz6yHxdTXE73lN_hwHuGY8CSHK4olbFzY)
+2023-01-09 12:53:06,307 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 12:53:20,600 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 12:53:20,602 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-9] This employee is not related to any Login
+2023-01-09 12:53:21,868 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 12:53:27,425 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 12:53:30,791 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 12:53:37,587 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 12:53:53,133 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-7] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMjQ5MDMzLCJleHAiOjE2NzMyODUwMzN9.LW4Sgydaj-G7pv0nt1K7qJNv-A_IIjUencyVxbhNFQA)
+2023-01-09 12:55:15,948 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 12:55:22,694 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 12:55:22,696 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-1] This employee is not related to any Login
+2023-01-09 12:59:11,253 INFO org.accolite.db.services.impl.ExpSlabsService [http-nio-9090-exec-10] Slab with slab ID:15 is not present
+2023-01-09 12:59:25,802 INFO org.accolite.db.services.impl.ExpSlabsService [http-nio-9090-exec-6] Slab with slab ID:15 is not present
+2023-01-09 13:11:14,651 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=8, userName=dinesh, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4IiwiaWF0IjoxNjczMjUwMDc0LCJleHAiOjE2NzMyODYwNzR9.yEBumDurI_E5AQszpln9qvx4y1yL_LMESIaUOs3AIUU)
+2023-01-09 13:11:40,746 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 13:11:45,425 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 13:12:23,258 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-1] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUwMTQzLCJleHAiOjE2NzMyODYxNDN9.RU-9rnt5dFCo8ay9YA5GwppOCL7PDY8jHpCVXXRh6BQ)
+2023-01-09 13:13:20,428 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-8] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUwMjAwLCJleHAiOjE2NzMyODYyMDB9.bY7-Hj0Q8JSLFaTDt4Ku7xlLvWxADYMU7f7-q6EK0uY)
+2023-01-09 13:13:40,511 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUwMjIwLCJleHAiOjE2NzMyODYyMjB9.lyMTfUEYw1HFec0D3QVx9nFciWW_eigljLBL0-cj7ec)
+2023-01-09 13:13:56,627 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-5] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUwMjM2LCJleHAiOjE2NzMyODYyMzZ9.Yp-XbRqXwvWg7QZYuaS7So14ctULF87u0SskEPE0vPk)
+2023-01-09 13:14:20,488 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 13:14:20,491 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-4] This employee is not related to any Login
+2023-01-09 13:14:21,383 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 13:14:41,816 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 13:14:41,817 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-7] This employee is not related to any Login
+2023-01-09 13:14:57,352 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 13:16:22,951 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 13:18:26,215 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 13:18:37,296 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 13:18:42,564 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 13:19:04,856 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 13:19:24,221 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 13:19:33,389 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 13:19:36,016 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 13:20:44,054 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 13:21:09,796 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 13:37:32,958 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-7] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUxNjUyLCJleHAiOjE2NzMyODc2NTJ9.ZD8ae2EVdudl0fNqEWXVgIkzWuJh61kkI8w4VDkt8q4)
+2023-01-09 13:37:52,758 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 13:38:00,227 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 13:38:00,229 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-5] This employee is not related to any Login
+2023-01-09 13:38:55,010 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUxNzM1LCJleHAiOjE2NzMyODc3MzV9.SXH9zYToTjag83FCeOHh_BpICmzaW-7E_PrlyqgVzmA)
+2023-01-09 13:39:04,480 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 13:39:31,282 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 13:41:34,664 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-4] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUxODk0LCJleHAiOjE2NzMyODc4OTR9.8d7b9SlImNhapGdknoMq2QR4dB0Sil3pSOSqJ1ZCXCA)
+2023-01-09 13:41:48,570 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 13:41:48,572 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-8] This employee is not related to any Login
+2023-01-09 14:01:14,565 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-2] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUzMDc0LCJleHAiOjE2NzMyODkwNzR9.Qm1MnTmJz6Z_tschw7DqWLtYGFdFs0R9F-DmUSpGduo)
+2023-01-09 14:01:22,961 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 14:01:29,289 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 14:01:42,433 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 14:01:49,981 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 14:01:49,984 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-4] This employee is not related to any Login
+2023-01-09 14:02:06,029 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 14:02:22,166 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 14:02:22,169 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-10] This employee is not related to any Login
+2023-01-09 14:02:23,257 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-3] This employee is not related to any band
+2023-01-09 14:02:24,372 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 14:02:24,940 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 14:02:27,787 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-3] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjUzMTQ3LCJleHAiOjE2NzMyODkxNDd9.qV8DrpMbQ3a0uCJj2PGpx-nD_RfxV_x0e1HeyqatOY8)
+2023-01-09 14:02:36,881 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 14:02:36,883 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-2] This employee is not related to any Login
+2023-01-09 14:12:14,678 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-8] This employee is not related to any project
+2023-01-09 14:12:14,684 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 14:12:14,685 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-09 14:12:14,687 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 14:12:14,692 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 14:12:14,695 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-8] This employee is not related to any Login
+2023-01-09 14:13:40,303 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-2] This employee is not related to any project
+2023-01-09 14:13:40,308 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 14:13:40,311 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 14:13:40,313 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 14:13:40,313 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 14:13:40,316 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-2] This employee is not related to any Login
+2023-01-09 14:13:49,480 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-4] This employee is not related to any project
+2023-01-09 14:13:49,486 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 14:13:49,491 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 14:13:49,494 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 14:13:49,494 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-4] This employee is not related to any Login
+2023-01-09 14:13:49,496 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 14:14:04,263 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-8] This employee is not related to any project
+2023-01-09 14:14:04,266 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 14:14:04,268 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-09 14:14:04,268 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 14:14:04,273 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 14:14:04,276 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-8] This employee is not related to any Login
+2023-01-09 14:14:15,502 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-10] This employee is not related to any project
+2023-01-09 14:14:15,508 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-09 14:14:15,513 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 14:14:15,515 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-10] This employee is not related to any Login
+2023-01-09 14:14:15,519 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 14:14:15,522 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 14:17:49,790 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-9] This employee is not related to any project
+2023-01-09 14:17:49,796 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 14:17:49,800 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 14:17:49,803 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-9] This employee is not related to any Login
+2023-01-09 14:17:49,816 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 14:17:49,818 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 14:18:01,124 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-8] This employee is not related to any project
+2023-01-09 14:18:01,130 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-09 14:18:01,135 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 14:18:01,135 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-09 14:18:01,137 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-8] This employee is not related to any Login
+2023-01-09 14:18:01,137 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-09 14:32:12,974 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 14:33:34,299 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 14:37:54,381 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 14:38:11,007 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 14:38:11,009 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-2] This employee is not related to any Login
+2023-01-09 14:43:09,372 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-3] This employee is not related to any project
+2023-01-09 14:43:09,380 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-09 14:43:09,381 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 14:43:09,387 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 14:43:09,387 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-3] This employee is not related to any band
+2023-01-09 14:43:09,390 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-3] This employee is not related to any Login
+2023-01-09 14:48:57,775 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 8016 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 14:48:57,778 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 14:48:57,779 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 14:49:07,283 INFO org.accolite.BeatApplication [main] Started BeatApplication in 10.138 seconds (process running for 10.923)
+2023-01-09 14:49:07,290 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 15:03:22,738 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-4] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjU2ODAyLCJleHAiOjE2NzMyOTI4MDJ9.cKaYZu6erk11qAeCO1CGcqs8HL9gkt1tnZ4aU3c-ga4)
+2023-01-09 15:25:58,136 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 9756 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 15:25:58,140 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 15:25:58,141 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 15:26:08,657 INFO org.accolite.BeatApplication [main] Started BeatApplication in 11.193 seconds (process running for 11.899)
+2023-01-09 15:26:08,665 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 15:27:04,712 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 13708 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 15:27:04,714 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 15:27:04,715 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 15:27:13,045 INFO org.accolite.BeatApplication [main] Started BeatApplication in 9.013 seconds (process running for 9.686)
+2023-01-09 15:27:13,051 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 15:27:17,302 DEBUG org.accolite.db.services.impl.EmployeeServiceImpl [http-nio-9090-exec-1] employee with empid :54 added terminated date
+2023-01-09 15:29:07,279 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 1704 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 15:29:07,286 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 15:29:07,287 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 15:29:13,558 INFO org.accolite.BeatApplication [main] Started BeatApplication in 6.933 seconds (process running for 7.595)
+2023-01-09 15:29:13,563 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 15:32:57,089 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:32:58,401 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:32:59,156 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:32:59,335 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:32:59,513 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:32:59,732 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:33:00,503 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:33:01,453 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:33:01,634 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:33:01,862 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9090-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.accolite.db.entities.RolesGroup.getAccess()" because "rolesGroupRecordFromDb" is null
+	at org.accolite.buisnesslogic.RolesGroupComponent.setAccess(RolesGroupComponent.java:21)
+	at org.accolite.controllers.LoginController.login(LoginController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-09 15:33:50,113 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-4] User logged in = SessionDetails(empId=9, userName=f, accessId=6, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5IiwiaWF0IjoxNjczMjU4NjMwLCJleHAiOjE2NzMyOTQ2MzB9.51QFIqlGHWy9j5QlbEjMX41qyqzmW0H9JhLRWdBobqg)
+2023-01-09 15:33:57,941 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 15:34:54,472 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 15:34:55,738 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-3] This employee is not related to any band
+2023-01-09 15:37:09,290 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 15:39:37,941 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 15:39:58,477 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 15:42:34,919 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 15:43:20,772 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 15:43:39,798 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 15:44:19,619 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 15:44:22,023 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-3] This employee is not related to any band
+2023-01-09 15:46:27,512 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 15:46:36,091 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 15:46:44,647 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-3] This employee is not related to any band
+2023-01-09 15:47:05,719 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 15:49:30,815 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 15:49:32,684 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-3] This employee is not related to any band
+2023-01-09 15:50:09,700 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 15:50:14,509 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 15:50:45,143 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 15:50:49,510 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 15:52:04,678 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 16:38:36,807 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMjYyNTE2LCJleHAiOjE2NzMyOTg1MTZ9.kk6KpZxUC2fH7-8vtWgyLM8ESCCrMsfn2YCdY0wXCjE)
+2023-01-09 17:08:03,229 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-10] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMjY0MjgzLCJleHAiOjE2NzMzMDAyODN9.tYnZlcPFrgDGahS8-ibzXoVXJuLB_jgoLHdWRGzSX68)
+2023-01-09 17:30:34,538 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-7] Invalid user details
+2023-01-09 17:30:36,079 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-5] Invalid user details
+2023-01-09 17:32:40,304 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjY1NzYwLCJleHAiOjE2NzMzMDE3NjB9.PuU_6ne6GMNiBh_-HmUN0gWQTFli-Hu_up3Kg4gcmos)
+2023-01-09 17:35:13,470 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 14960 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 17:35:13,474 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 17:35:13,477 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 17:35:22,187 INFO org.accolite.BeatApplication [main] Started BeatApplication in 10.024 seconds (process running for 11.207)
+2023-01-09 17:35:22,194 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 17:36:41,351 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-4] Employee with employee ID: 54 has left the organization
+2023-01-09 17:37:21,034 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 16560 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 17:37:21,036 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 17:37:21,037 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 17:37:30,193 INFO org.accolite.BeatApplication [main] Started BeatApplication in 9.796 seconds (process running for 10.56)
+2023-01-09 17:37:30,198 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 17:37:42,589 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-2] Employee with employee ID: 54 has left the organization
+2023-01-09 17:37:56,851 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-3] Employee with employee ID: 54 has left the organization
+2023-01-09 17:38:15,382 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 3892 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 17:38:15,386 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 17:38:15,387 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 17:38:25,089 INFO org.accolite.BeatApplication [main] Started BeatApplication in 10.353 seconds (process running for 11.026)
+2023-01-09 17:38:25,096 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 17:39:35,403 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-5] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjY2MTc1LCJleHAiOjE2NzMzMDIxNzV9.sEkrAZHWZ-RralCbLM0HBgN8PRuvzs95DHZfFdgGO8Q)
+2023-01-09 17:39:43,555 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-3] This employee is not related to any project
+2023-01-09 17:39:43,583 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 17:39:43,607 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-3] This employee is not related to any Login
+2023-01-09 17:46:34,131 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-7] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjY2NTk0LCJleHAiOjE2NzMzMDI1OTR9.gNSKjc8XEgtiEcMhWgQfKOiIBj2CHv6lxKTu51ujsLE)
+2023-01-09 17:52:08,588 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-10] This employee is not related to any project
+2023-01-09 17:52:08,599 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-09 17:52:08,603 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-10] This employee is not related to any Client counterpart
+2023-01-09 17:52:08,605 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 17:52:09,424 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-1] This employee is not related to any project
+2023-01-09 17:52:09,434 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 17:52:09,438 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-09 17:52:09,441 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 17:52:40,164 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-5] This employee is not related to any project
+2023-01-09 17:52:40,173 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-09 17:52:40,176 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-5] This employee is not related to any Client counterpart
+2023-01-09 17:52:40,178 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 17:52:40,622 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-9] This employee is not related to any project
+2023-01-09 17:52:40,628 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 17:52:40,631 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-9] This employee is not related to any Client counterpart
+2023-01-09 17:52:40,634 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 17:53:17,997 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-6] This employee is not related to any project
+2023-01-09 17:53:18,006 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 17:53:18,008 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-6] This employee is not related to any Client counterpart
+2023-01-09 17:53:18,011 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 17:53:18,754 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-10] This employee is not related to any project
+2023-01-09 17:53:18,761 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-09 17:53:18,765 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-10] This employee is not related to any Client counterpart
+2023-01-09 17:53:18,768 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-10] This employee is not related to any band
+2023-01-09 18:05:14,204 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-5] This employee is not related to any project
+2023-01-09 18:05:14,214 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-09 18:05:14,218 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-5] This employee is not related to any Client counterpart
+2023-01-09 18:05:14,221 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-5] This employee is not related to any band
+2023-01-09 18:05:15,005 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-9] This employee is not related to any project
+2023-01-09 18:05:15,013 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 18:05:15,017 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-9] This employee is not related to any Client counterpart
+2023-01-09 18:05:15,021 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-9] This employee is not related to any band
+2023-01-09 18:15:55,022 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-4] This employee is not related to any project
+2023-01-09 18:15:55,028 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 18:15:55,031 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 18:15:55,033 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 18:15:55,034 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-4] This employee is not related to any Client counterpart
+2023-01-09 18:15:55,038 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 18:18:04,557 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-9] This employee is not related to any Login
+2023-01-09 20:43:23,255 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 11496 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 20:43:23,258 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 20:43:23,259 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 20:43:29,942 INFO org.accolite.BeatApplication [main] Started BeatApplication in 7.457 seconds (process running for 8.427)
+2023-01-09 20:43:29,947 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 20:44:54,338 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-4] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMjc3Mjk0LCJleHAiOjE2NzMzMTMyOTR9.ebcEs9_rXz-eK25Q35qtKXMEvSchKfCuSmmv1F0Rd1s)
+2023-01-09 20:44:54,381 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-09 20:44:59,287 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-6] This employee is not related to any project
+2023-01-09 20:44:59,292 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 20:44:59,295 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 20:44:59,296 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 20:44:59,299 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-6] This employee is not related to any Client counterpart
+2023-01-09 20:44:59,303 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 20:45:06,109 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-9] Employee with employee ID:0is not present
+2023-01-09 20:46:30,494 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-4] Employee with employee ID:0is not present
+2023-01-09 20:46:32,476 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-7] Employee with employee ID:0is not present
+2023-01-09 20:47:23,015 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-4] Employee with employee ID:0is not present
+2023-01-09 20:48:23,291 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 11396 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 20:48:23,294 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 20:48:23,296 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 20:48:30,261 INFO org.accolite.BeatApplication [main] Started BeatApplication in 7.663 seconds (process running for 8.347)
+2023-01-09 20:48:30,266 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 20:49:30,148 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-1] User logged in = SessionDetails(empId=1, userName=mukil, accessId=1, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjczMjc3NTcwLCJleHAiOjE2NzMzMTM1NzB9.JjG2XEgkDVCew2H8RhEzjUNys3V9fqHo7TJV0cFjaGM)
+2023-01-09 20:49:32,053 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-2] This employee is not related to any project
+2023-01-09 20:49:32,065 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-2] This employee is not related to any Client counterpart
+2023-01-09 20:49:32,068 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 20:49:38,500 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-8] This employee is not related to any project
+2023-01-09 20:49:38,516 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-8] This employee is not related to any Client counterpart
+2023-01-09 20:49:38,518 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-8] This employee is not related to any band
+2023-01-09 20:49:39,945 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-6] This employee is not related to any project
+2023-01-09 20:49:39,957 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-6] This employee is not related to any Client counterpart
+2023-01-09 20:49:39,959 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 20:50:01,382 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-1] This employee is not related to any project
+2023-01-09 20:50:01,392 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 20:50:01,397 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 20:50:01,400 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 20:50:01,403 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-09 20:50:01,406 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 20:50:06,260 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 20:50:10,517 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-5] This employee is not related to any Login
+2023-01-09 20:50:14,887 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 20:50:16,431 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-7] This employee is not related to any project
+2023-01-09 20:50:16,436 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-09 20:50:16,438 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 20:50:16,439 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-09 20:50:16,441 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-7] This employee is not related to any Client counterpart
+2023-01-09 20:50:16,444 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-7] This employee is not related to any band
+2023-01-09 20:50:18,050 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-4] Employee with employee ID:0is not present
+2023-01-09 20:50:24,096 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-3] This employee is not related to any project
+2023-01-09 20:50:24,101 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 20:50:24,103 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-09 20:50:24,104 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 20:50:24,107 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-3] This employee is not related to any Client counterpart
+2023-01-09 20:50:24,109 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-3] This employee is not related to any band
+2023-01-09 20:50:53,949 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-6] This employee is not related to any project
+2023-01-09 20:50:53,957 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 20:50:53,958 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 20:50:53,959 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-6] This employee is not related to any Client counterpart
+2023-01-09 20:50:53,964 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-6] This employee is not related to any band
+2023-01-09 20:50:54,326 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-1] This employee is not related to any project
+2023-01-09 20:50:54,335 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 20:50:54,337 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-09 20:50:54,339 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 20:50:54,339 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 20:50:54,766 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-2] This employee is not related to any project
+2023-01-09 20:50:54,773 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-2] This employee is not related to any organization
+2023-01-09 20:50:54,775 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-09 20:50:54,776 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-2] This employee is not related to any Client counterpart
+2023-01-09 20:50:54,779 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-2] This employee is not related to any band
+2023-01-09 20:50:56,394 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 20:50:58,156 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-6] This employee is not related to any project
+2023-01-09 20:50:58,160 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 20:50:58,170 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-6] This employee is not related to any Login
+2023-01-09 20:51:22,717 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-1] This employee is not related to any project
+2023-01-09 20:51:22,735 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-1] This employee is not related to any Login
+2023-01-09 20:51:23,111 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-2] This employee is not related to any project
+2023-01-09 20:51:23,127 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-2] This employee is not related to any Login
+2023-01-09 20:51:23,535 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-9] This employee is not related to any project
+2023-01-09 20:51:23,550 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-9] This employee is not related to any Login
+2023-01-09 20:52:09,349 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-10] This employee is not related to any project
+2023-01-09 20:52:09,359 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 20:52:09,365 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-10] This employee is not related to any Login
+2023-01-09 20:52:09,742 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-3] This employee is not related to any project
+2023-01-09 20:52:09,746 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-8] This employee is not related to any organization
+2023-01-09 20:52:09,755 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-3] This employee is not related to any Login
+2023-01-09 20:52:10,137 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-5] This employee is not related to any project
+2023-01-09 20:52:10,141 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-7] This employee is not related to any organization
+2023-01-09 20:52:10,152 INFO org.accolite.db.services.impl.LoginService [http-nio-9090-exec-5] This employee is not related to any Login
+2023-01-09 20:52:12,980 INFO org.accolite.buisnesslogic.EmployeeComponent [http-nio-9090-exec-6] Employee with employee ID:0is not present
+2023-01-09 22:09:32,055 DEBUG org.accolite.controllers.LoginController [http-nio-9090-exec-9] User logged in = SessionDetails(empId=5, userName=sai, accessId=5, Jwt=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjczMjgyMzcyLCJleHAiOjE2NzMzMTgzNzJ9.5ItgbT-AMZOx48L430-KEQh2GPdo_5Uh_Pw3_UIoFUs)
+2023-01-09 22:09:32,108 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 22:09:41,518 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-4] This employee is not related to any project
+2023-01-09 22:09:41,523 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-10] This employee is not related to any organization
+2023-01-09 22:09:41,525 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-4] This employee is not related to any organization
+2023-01-09 22:09:41,527 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-4] This employee is not related to any Client counterpart
+2023-01-09 22:09:41,530 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-4] This employee is not related to any band
+2023-01-09 22:10:05,718 INFO org.accolite.db.services.impl.ProjectServiceImpl [http-nio-9090-exec-1] This employee is not related to any project
+2023-01-09 22:10:05,723 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 22:10:05,725 INFO org.accolite.db.services.impl.ClientCounterpartService [http-nio-9090-exec-1] This employee is not related to any Client counterpart
+2023-01-09 22:10:05,727 INFO org.accolite.db.services.impl.BandService [http-nio-9090-exec-1] This employee is not related to any band
+2023-01-09 22:47:34,465 INFO org.accolite.BeatApplication [main] Starting BeatApplication using Java 17 with PID 6892 (C:\Users\bomma.c\aup\beat\build\classes\java\main started by bomma.c in C:\Users\bomma.c\aup\beat)
+2023-01-09 22:47:34,472 DEBUG org.accolite.BeatApplication [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-09 22:47:34,474 INFO org.accolite.BeatApplication [main] The following 1 profile is active: "dev"
+2023-01-09 22:47:41,039 INFO org.accolite.BeatApplication [main] Started BeatApplication in 7.206 seconds (process running for 7.945)
+2023-01-09 22:47:41,044 DEBUG org.accolite.BeatApplication [main] hello world printed
+2023-01-09 22:48:18,700 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-09 22:50:00,391 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-1] This employee is not related to any organization
+2023-01-09 22:51:54,062 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-5] This employee is not related to any organization
+2023-01-09 22:51:58,110 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
+2023-01-09 22:52:01,560 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-3] This employee is not related to any organization
+2023-01-09 22:52:04,154 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-6] This employee is not related to any organization
+2023-01-09 23:02:23,316 INFO org.accolite.db.services.impl.OrganizationServiceImpl [http-nio-9090-exec-9] This employee is not related to any organization
